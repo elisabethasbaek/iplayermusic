@@ -4,9 +4,11 @@ import Featured from "./pages/Featured";
 
 function App() {
   return (
-    <Router>
-      <Featured path="/" />
-    </Router>
+    <>
+      <Router>
+        <Featured path="/" />
+      </Router>
+    </>
   );
 }
 

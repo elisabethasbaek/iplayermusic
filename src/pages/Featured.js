@@ -2,10 +2,12 @@ import "../Variables.css";
 import FeaturedCard from "../components/FeaturedCard";
 import Heading from "../components/Heading";
 import "../components/style/Main.css";
+import BreadcrumbNavigation from "../components/BreadcrumbNavigation";
 
 export default function Featured(){
     return(
         <main className="main">
+            <BreadcrumbNavigation>Featured</BreadcrumbNavigation>
             <Heading>Featured</Heading>
             <FeaturedCard />
             <FeaturedCard />
