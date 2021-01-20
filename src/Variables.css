@@ -1,0 +1,15 @@
+:root{
+    --primaryColor: #FF1168;
+    --secondaryColor: #341931;
+    --additionalColor: #111625;
+    --gradientHorizontal: linear-gradient(90deg, rgba(238,11,117,1) 0%, rgba(254,103,2,1) 100%);
+    --gradientVertical: linear-gradient(180deg, rgba(238,11,117,1) 0%, rgba(254,103,2,1) 100%);
+    --darkBlue: #115793;
+    --blue: #00A1CB;
+    --lightBlue: #0ABEBE;
+    --darkGreen: #3A7634;
+    --lightGreen: #5EB11C;
+    --yellow: #F2BC06;
+    --orange: #F18D05;
+    --coral #E54028;
+}
