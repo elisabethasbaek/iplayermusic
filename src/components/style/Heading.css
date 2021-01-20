@@ -1,0 +1,8 @@
+.heading{
+    font-family: var(--fontFamily);
+    background: var(--gradientHorizontal);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    padding: 6.75vw 0 0 0;
+}
