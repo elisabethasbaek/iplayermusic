@@ -6,7 +6,7 @@
     background-color: var(--secondaryColor);
     text-transform: uppercase;
     color: #FFF;
-    padding-top: 6.75vw;
+    padding-top: var(--borderPadding);
 }
 
 .breadcrumbNavigation__location{
