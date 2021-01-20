@@ -1,6 +1,6 @@
 .featuredCard{
     display: grid;
-    margin: 6.75vw 0;
+    margin: var(--borderPadding) 0;
 }
 
 .featuredCard__image,
@@ -25,7 +25,7 @@
 
 .featuredCard__textContainer{
     align-self: end;
-    margin: 6.75vw;
+    margin: var(--borderPadding);
     font-family: var(--fontFamily);
     color: #FFF;
 }

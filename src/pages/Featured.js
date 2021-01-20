@@ -6,7 +6,7 @@ import BreadcrumbNavigation from "../components/BreadcrumbNavigation";
 
 export default function Featured(){
     return(
-        <main className="main">
+        <main className="main featured">
             <BreadcrumbNavigation>Featured</BreadcrumbNavigation>
             <Heading>Featured</Heading>
             <FeaturedCard />

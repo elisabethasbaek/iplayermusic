@@ -6,6 +6,7 @@
     --secondaryColor: #341931;
     --additionalColor: #111625;
     --gradientHorizontal: linear-gradient(90deg, rgba(238,11,117,1) 0%, rgba(254,103,2,1) 40%);
+    --gradientHorizontalIcons: linear-gradient(90deg, rgba(238,11,117,1) 0%, rgba(254,103,2,1) 100%);
     --gradientVertical: linear-gradient(180deg, rgba(238,11,117,1) 0%, rgba(254,103,2,1) 100%);
     --darkBlue: #115793;
     --blue: #00A1CB;
@@ -17,4 +18,5 @@
     --coral: #E54028;
     --fontFamily: 'Poppins', 'Open Sans', sans-serif;
     --boxShadow: 0px 0px 25px rgba(0,0,0,0.2);
+    --borderPadding: 6.75vw;
 }

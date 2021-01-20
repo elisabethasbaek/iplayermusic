@@ -1,5 +1,5 @@
 .main{
-    padding: 0vw 6.75vw;
+    padding: 0vw var(--borderPadding);
     background-color: var(--secondaryColor);
     margin: 0;
 }
