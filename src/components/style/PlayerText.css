@@ -1,0 +1,25 @@
+.player__textContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.player__textContainer .player__title,
+.player__textContainer .player__artist{
+    font-family: var(--fontFamily);
+    color: #FFF;
+    text-align: center;
+    margin: 0;
+}
+
+.player__textContainer .player__title{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+.player__textContainer .player__artist{
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+    font-weight: 300;
+}

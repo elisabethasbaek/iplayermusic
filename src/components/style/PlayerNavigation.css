@@ -1,0 +1,10 @@
+.playerNavigation{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 2.5rem 2rem 2.5rem;
+}
+
+.playerNavigation__play{
+    height: auto;
+    width: 3.5rem;
+}

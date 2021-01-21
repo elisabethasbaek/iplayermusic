@@ -1,9 +1,9 @@
 import { Link } from "@reach/router";
 import "../components/style/MainNav.css";
 
-export default function MainNav(){
+export default function MainNav(props){
     return(
-        <section className="mainNav">
+        <section className="mainNav" style={{display:props.display}}>
             <Link to="/albums">
                 <img src="../Pulse.svg" alt="Icon of pulse"/>
             </Link>

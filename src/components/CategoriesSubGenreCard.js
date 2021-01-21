@@ -1,6 +1,6 @@
 import "../components/style/CategoriesSubGenreCard.css";
 
-export default function CategoriesSubGenreCard(props){
+export default function CategoriesSubGenreCard(){
     return(
         <article className="categoriesSubGenreCard">
             <p className="categoriesSubGenreCard__text">Fucking rad sub-genre</p>
