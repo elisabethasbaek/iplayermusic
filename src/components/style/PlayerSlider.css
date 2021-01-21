@@ -1,6 +1,6 @@
 .playerSlider{
     display: grid;
-    grid-template: 1fr 1fr / auto auto;
+    grid-template: auto auto / auto auto;
     width: 100%;
 }
 

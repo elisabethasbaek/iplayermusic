@@ -3,6 +3,7 @@ import BreadcrumbNavigation from "../components/BreadcrumbNavigation"; /* compon
 import PlayerImage from "../components/PlayerImage"; /* component */
 import MainNav from "../components/MainNav"; /* component */
 import PlayerSlider from "../components/PlayerSlider"; /* component */
+import PlayerNavigation from "../components/PlayerNavigation"; /* component */
 import "../components/style/Main.css"; /* css */
 import "../components/style/Player.css"; /* css */
 import "../Variables.css"; /* css */
@@ -10,11 +11,13 @@ import PlayerText from "../components/PlayerText";
 
 export default function Player(){
     return(
-        <main className="main player" style={{backgroundImage: `url("https://picsum.photos/2000/2000")`}}>
+        <main className="main player">
+            {/* <img src="https://picsum.photos/2000/2000" alt="" className="backgroundImage" /> */}
             <BreadcrumbNavigation color="rgba(0,0,0,0.0)" display="none">Playing</BreadcrumbNavigation>
             <PlayerImage />
             <PlayerText title="Title of dope ass song" artist="The fucking artist bruh" />
             <PlayerSlider start="0:00" end="3:40" />
+            <PlayerNavigation />
             <MainNav display="none"/>
         </main>
     )
