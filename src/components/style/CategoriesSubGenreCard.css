@@ -1,0 +1,17 @@
+.categoriesSubGenreCard{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem var(--borderPadding);
+    color: #FFF;
+    font-family: var(--fontFamily);
+    font-size: 0.8rem;
+}
+
+.categoriesSubGenreCard__text{
+    margin: 0;
+}
+
+.categoriesSubGenreCard__chevron{
+    height: auto;
+    width: 0.4rem;
+}
