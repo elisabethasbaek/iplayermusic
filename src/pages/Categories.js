@@ -9,7 +9,7 @@ import "../Variables.css"; /* css */
 export default function Categories(){
     return(
         <main className="main categories">
-            <BreadcrumbNavigation>Categories</BreadcrumbNavigation>
+            <BreadcrumbNavigation color="var(--secondaryColor)">Categories</BreadcrumbNavigation>
             <Heading>Categories</Heading>
             <CategoriesCard color="var(--primaryColor)" />
             <CategoriesCard color="var(--coral)" />
