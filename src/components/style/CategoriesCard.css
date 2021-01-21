@@ -1,6 +1,6 @@
 .categoriesCard{
     max-width: 100%;
-    margin: 0.6rem 0;
+    margin-bottom: 0.9rem;
     display: flex;
     justify-content: space-between;
     box-shadow: var(--boxShadow);

@@ -1,6 +1,6 @@
 .featuredCard{
     display: grid;
-    margin: var(--borderPadding) 0;
+    margin-bottom: 2rem;
 }
 
 .featuredCard__image,
