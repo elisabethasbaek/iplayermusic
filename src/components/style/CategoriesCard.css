@@ -1,6 +1,6 @@
 .categoriesCard{
     max-width: 100%;
-    margin: 0.8rem 0;
+    margin: 0.6rem 0;
     display: flex;
     justify-content: space-between;
     box-shadow: var(--boxShadow);
@@ -20,4 +20,13 @@
 .categoriesCard__readMore{
     height: auto;
     width: 1.5rem;
+}
+
+.subGenreContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.subGenreContainer--hidden{
+    display: none;
 }
