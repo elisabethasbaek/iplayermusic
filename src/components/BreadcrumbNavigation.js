@@ -5,7 +5,7 @@ export default function BreadcrumbNavigation(props){
         <section className="breadcrumbNavigation" style={{backgroundColor:props.color}}>
             <ion-icon name="chevron-back-outline" className="breadcrumbNavigation__chevron"></ion-icon>
             <h1 className="breadcrumbNavigation__location">{props.children}</h1>
-            <ion-icon name="search-outline" className="breadcrumbNavigation__search"></ion-icon>
+            <ion-icon name="search-outline" className="breadcrumbNavigation__search" style={{display:props.display}}></ion-icon>
         </section>
     )
 };

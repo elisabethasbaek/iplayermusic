@@ -3,6 +3,7 @@ import "../Variables.css"; /* css */
 import Heading from "../components/Heading"; /* component */
 import BreadcrumbNavigation from "../components/BreadcrumbNavigation"; /* component */
 import CategoriesCard from "../components/CategoriesCard"; /* component */
+import MainNav from "../components/MainNav"; /* component */
 import "../components/style/Main.css"; /* css */
 import "../Variables.css"; /* css */
 
@@ -20,6 +21,7 @@ export default function Categories(){
             <CategoriesCard color="var(--lightBlue)" />
             <CategoriesCard color="var(--blue)" />
             <CategoriesCard color="var(--darkBlue)" />
+            <MainNav />
         </main>
     )
 };
