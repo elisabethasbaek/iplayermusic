@@ -9,11 +9,11 @@ export default function Featured(){
         <main className="main featured">
             <BreadcrumbNavigation color="var(--secondaryColor)">Featured</BreadcrumbNavigation>
             <Heading>Featured</Heading>
-            <FeaturedCard />
-            <FeaturedCard />
-            <FeaturedCard />
-            <FeaturedCard />
-            <FeaturedCard />
+            <FeaturedCard image="https://via.placeholder.com/600x900" artist="The Greatest Showman" category="Soundtrack" />
+            <FeaturedCard image="https://via.placeholder.com/600x900" artist="The Greatest Showman" category="Soundtrack" />
+            <FeaturedCard image="https://via.placeholder.com/600x900" artist="The Greatest Showman" category="Soundtrack" />
+            <FeaturedCard image="https://via.placeholder.com/600x900" artist="The Greatest Showman" category="Soundtrack" />
+            <FeaturedCard image="https://via.placeholder.com/600x900" artist="The Greatest Showman" category="Soundtrack" />
         </main>
     )
 };
