@@ -5,6 +5,7 @@ import MainNav from "../components/MainNav"; /* component */
 import "../components/style/Main.css"; /* css */
 import "../components/style/Player.css"; /* css */
 import "../Variables.css"; /* css */
+import PlayerSlider from "../components/PlayerSlider";
 
 export default function Player(){
     return(
@@ -15,7 +16,8 @@ export default function Player(){
                 <h1 className="player__title">Title of dope ass song</h1>
                 <h2 className="player__artist">The fucking artist bruh</h2>
             </section>
-            <MainNav />
+            <PlayerSlider start="0:00" end="3:40" />
+            <MainNav display="none"/>
         </main>
     )
 };
