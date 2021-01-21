@@ -2,20 +2,18 @@ import "../Variables.css";
 import BreadcrumbNavigation from "../components/BreadcrumbNavigation"; /* component */
 import PlayerImage from "../components/PlayerImage"; /* component */
 import MainNav from "../components/MainNav"; /* component */
+import PlayerSlider from "../components/PlayerSlider"; /* component */
 import "../components/style/Main.css"; /* css */
 import "../components/style/Player.css"; /* css */
 import "../Variables.css"; /* css */
-import PlayerSlider from "../components/PlayerSlider";
+import PlayerText from "../components/PlayerText";
 
 export default function Player(){
     return(
-        <main className="main player">
+        <main className="main player" style={{backgroundImage: `url("https://picsum.photos/2000/2000")`}}>
             <BreadcrumbNavigation color="rgba(0,0,0,0.0)" display="none">Playing</BreadcrumbNavigation>
             <PlayerImage />
-            <section className="player__textContainer">
-                <h1 className="player__title">Title of dope ass song</h1>
-                <h2 className="player__artist">The fucking artist bruh</h2>
-            </section>
+            <PlayerText title="Title of dope ass song" artist="The fucking artist bruh" />
             <PlayerSlider start="0:00" end="3:40" />
             <MainNav display="none"/>
         </main>

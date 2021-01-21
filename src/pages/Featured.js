@@ -10,11 +10,11 @@ export default function Featured(){
         <main className="main featured">
             <BreadcrumbNavigation color="var(--secondaryColor)">Featured</BreadcrumbNavigation>
             <Heading>Featured</Heading>
-            <FeaturedCard image="https://via.placeholder.com/600x900" artist="The Greatest Showman" category="Soundtrack" />
-            <FeaturedCard image="https://via.placeholder.com/600x900" artist="The Greatest Showman" category="Soundtrack" />
-            <FeaturedCard image="https://via.placeholder.com/600x900" artist="The Greatest Showman" category="Soundtrack" />
-            <FeaturedCard image="https://via.placeholder.com/600x900" artist="The Greatest Showman" category="Soundtrack" />
-            <FeaturedCard image="https://via.placeholder.com/600x900" artist="The Greatest Showman" category="Soundtrack" />
+            <FeaturedCard image="https://picsum.photos/600/900?random=1" artist="The Greatest Showman" category="Soundtrack" />
+            <FeaturedCard image="https://picsum.photos/600/900?random=2" artist="The Greatest Showman" category="Soundtrack" />
+            <FeaturedCard image="https://picsum.photos/600/900?random=3" artist="The Greatest Showman" category="Soundtrack" />
+            <FeaturedCard image="https://picsum.photos/600/900?random=4" artist="The Greatest Showman" category="Soundtrack" />
+            <FeaturedCard image="https://picsum.photos/600/900?random=5" artist="The Greatest Showman" category="Soundtrack" />
             <MainNav />
         </main>
     )
