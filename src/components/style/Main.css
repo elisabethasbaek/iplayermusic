@@ -1,5 +1,6 @@
 .main{
-    padding: 0vw var(--borderPadding);
+    padding: 0vw var(--borderPadding) 5rem var(--borderPadding);
     background-color: var(--secondaryColor);
     margin: 0;
+    min-height: 100vh;
 }

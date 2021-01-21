@@ -1,0 +1,23 @@
+.categoriesCard{
+    max-width: 100%;
+    margin: 0.8rem 0;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: var(--boxShadow);
+    border-radius: 5px;
+    padding: 0 var(--borderPadding);
+}
+
+.categoriesCard__text{
+    color: #FFF;
+    line-height: 2.5rem;
+    font-family: var(--fontFamily);
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.categoriesCard__readMore{
+    height: auto;
+    width: 1.5rem;
+}
