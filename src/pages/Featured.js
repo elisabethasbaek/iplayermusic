@@ -15,7 +15,7 @@ export default function Featured(){
             <FeaturedCard image="https://picsum.photos/600/900?random=3" artist="The Greatest Showman" category="Soundtrack" />
             <FeaturedCard image="https://picsum.photos/600/900?random=4" artist="The Greatest Showman" category="Soundtrack" />
             <FeaturedCard image="https://picsum.photos/600/900?random=5" artist="The Greatest Showman" category="Soundtrack" />
-            <MainNav />
+            <MainNav filterWifi="brightness(10000%)"/>
         </main>
     )
 };

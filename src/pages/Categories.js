@@ -21,7 +21,7 @@ export default function Categories(){
             <CategoriesCard color="var(--lightBlue)" />
             <CategoriesCard color="var(--blue)" />
             <CategoriesCard color="var(--darkBlue)" />
-            <MainNav />
+            <MainNav filterSett="brightness(10000%)" />
         </main>
     )
 };

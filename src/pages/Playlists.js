@@ -33,7 +33,7 @@ export default function Playlists(){
                 <PlaylistsSong title="Here With Me" artist="Marshmello" duration="3 : 37" />
                 <PlaylistsSong title="Paradise" artist="Bazzi" duration="3 : 12" />
             </section>
-            <MainNav />
+            <MainNav filterMic="brightness(10000%)" />
         </main>
     )
 }
