@@ -3,4 +3,5 @@
     height: 34vw;
     object-fit: cover;
     border-radius: 10px;
+    box-shadow: var(--boxShadow);
 }

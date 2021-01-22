@@ -2,6 +2,10 @@
     padding: 0 0 0 0;
 }
 
+.albums .heading{
+    padding: 2em var(--borderPadding) 0 var(--borderPadding);
+}
+
 .albums__featuredImages{
     display: flex;
     flex-direction: row;
@@ -11,6 +15,13 @@
     padding-left: var(--borderPadding);
 }
 
-.albums .heading{
-    padding: 2em var(--borderPadding) 0 var(--borderPadding);
+.albums__newReleases{
+    padding-top: 0.7rem;
+}
+
+.albums__newReleaseList{
+    display: flex;
+    flex-direction: column;
+    padding: 0 var(--borderPadding);
+    margin: 0 0 4rem 0;
 }

@@ -10,6 +10,11 @@
     font-weight: bold;
     margin: 0;
     font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.albumsHeading__heading:visited{
+    color: #FFF;
 }
 
 .albumsHeading__viewAll{
@@ -19,4 +24,8 @@
     margin: 0;
     font-weight: 200;
     text-decoration: none;
+}
+
+.albumsHeading__viewAll:visited{
+    color: var(--primaryColor);
 }
