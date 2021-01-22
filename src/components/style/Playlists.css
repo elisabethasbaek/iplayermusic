@@ -1,0 +1,23 @@
+.playlists{
+    display: grid;
+    padding: 0;
+}
+
+.playlists .playlists__backgroundImage{
+    overflow: hidden;
+    max-width: 100%;
+    grid-area: 1/1/-1/-1;
+}
+
+.playlists .heading{
+    padding: 2em var(--borderPadding);
+    grid-area: 1/1/2/2;
+}
+
+.playlists .playlistsRotary{
+    grid-area: 1/1/2/2;
+}
+
+.playlists .playlists__songs{
+    padding: 0 var(--borderPadding) 6rem var(--borderPadding);
+}

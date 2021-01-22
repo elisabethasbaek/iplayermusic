@@ -1,0 +1,19 @@
+.playlistsRotary{
+    display: grid;
+    width: 100vw;
+    overflow: hidden;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    justify-content: center;
+}
+
+.playlistsRotary .playlistsRotary__segment{
+    margin: 0 1.6rem;
+}
+
+.playlistsRotary .playlistsRotary__segment:nth-of-type(1) img,
+.playlistsRotary .playlistsRotary__segment:nth-of-type(3) img{
+    max-width: 28vw;
+    max-height: 28vw;
+    margin-top: 10rem;
+    filter: contrast(70%);
+}
