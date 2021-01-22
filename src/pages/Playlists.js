@@ -34,7 +34,7 @@ export default function Playlists(){
                 <PlaylistsSong title="Here With Me" artist="Marshmello" duration="3 : 37" />
                 <PlaylistsSong title="Paradise" artist="Bazzi" duration="3 : 12" />
             </section>
-            <PlaylistsButton text="Listen all" />
+            <PlaylistsButton album="/playlists/player" text="Listen all" />
 
             <MainNav filterMic="brightness(10000%)" />
         </main>

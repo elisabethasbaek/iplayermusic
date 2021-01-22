@@ -12,17 +12,17 @@ export default function CategoriesCard(props){
     return(
         <>
             <article className="categoriesCard" style={{backgroundColor: props.color}}>
-                <p className="categoriesCard__text">Dope-ass genre</p>
+                <p className="categoriesCard__text">{props.genre}</p>
                 <img src="../Dotdotdot.svg" alt="Button to click to expand menu to read more" className="categoriesCard__readMore" onClick={toggleShowSubGenre} />
             </article>
             <section className={"subGenreContainer " + (open ? "" : "subGenreContainer--hidden")}>
-                <CategoriesSubGenreCard />
-                <CategoriesSubGenreCard />
-                <CategoriesSubGenreCard />
-                <CategoriesSubGenreCard />
-                <CategoriesSubGenreCard />
-                <CategoriesSubGenreCard />
-                <CategoriesSubGenreCard />
+                <CategoriesSubGenreCard subgenre="Acoustic Blues" />
+                <CategoriesSubGenreCard subgenre="Blues Rock" />
+                <CategoriesSubGenreCard subgenre="Canadian Blues" />
+                <CategoriesSubGenreCard subgenre="Jazz Blues" />
+                <CategoriesSubGenreCard subgenre="Piano Blues" />
+                <CategoriesSubGenreCard subgenre="Soul Blues" />
+                <CategoriesSubGenreCard subgenre="Swamp Blues" />
             </section>
         </>
     )

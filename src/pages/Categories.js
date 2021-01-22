@@ -12,15 +12,17 @@ export default function Categories(){
         <main className="main categories">
             <BreadcrumbNavigation color="var(--secondaryColor)">Categories</BreadcrumbNavigation>
             <Heading>Categories</Heading>
-            <CategoriesCard color="var(--primaryColor)" />
-            <CategoriesCard color="var(--coral)" />
-            <CategoriesCard color="var(--orange)" />
-            <CategoriesCard color="var(--yellow)" />
-            <CategoriesCard color="var(--lightGreen)" />
-            <CategoriesCard color="var(--darkGreen)" />
-            <CategoriesCard color="var(--lightBlue)" />
-            <CategoriesCard color="var(--blue)" />
-            <CategoriesCard color="var(--darkBlue)" />
+
+            <CategoriesCard color="var(--primaryColor)" genre="Alternative" />
+            <CategoriesCard color="var(--coral)" genre="Blues" />
+            <CategoriesCard color="var(--orange)" genre="Classical" />
+            <CategoriesCard color="var(--yellow)" genre="Country" />
+            <CategoriesCard color="var(--lightGreen)" genre="Dance" />
+            <CategoriesCard color="var(--darkGreen)" genre="Electronic" />
+            <CategoriesCard color="var(--lightBlue)" genre="Fitness &amp; Workout" />
+            <CategoriesCard color="var(--blue)" genre="Hip-Hop/Rap" />
+            <CategoriesCard color="var(--darkBlue)" genre="Industrial" />
+
             <MainNav filterSett="brightness(10000%)" />
         </main>
     )
