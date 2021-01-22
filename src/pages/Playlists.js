@@ -7,6 +7,7 @@ import "../components/style/Main.css"; /* css */
 import "../components/style/Playlists.css" /* css */
 import "../Variables.css"; /* css */
 import PlaylistsRotary from "../components/PlaylistsRotary";
+import PlaylistsSong from "../components/PlaylistsSong";
 
 export default function Playlists(){
     return(
@@ -15,6 +16,23 @@ export default function Playlists(){
             <BreadcrumbNavigation color="rgba(0,0,0,0.0)">Playlists</BreadcrumbNavigation>
             <Heading>Playlists</Heading> 
             <PlaylistsRotary />
+            <section className="playlists__songs">
+                <PlaylistsSong title="Old Town Road" artist="Lil Nas" duration="3 : 58" />
+                <PlaylistsSong title="Don't Call Me Up" artist="Mabel" duration="2 : 46" />
+                <PlaylistsSong title="Let Me Down Slowly" artist="Alec Benjamin" duration="4 : 12" />
+                <PlaylistsSong title="Here With Me" artist="Marshmello" duration="3 : 37" />
+                <PlaylistsSong title="Paradise" artist="Bazzi" duration="3 : 12" />
+                <PlaylistsSong title="Old Town Road" artist="Lil Nas" duration="3 : 58" />
+                <PlaylistsSong title="Don't Call Me Up" artist="Mabel" duration="2 : 46" />
+                <PlaylistsSong title="Let Me Down Slowly" artist="Alec Benjamin" duration="4 : 12" />
+                <PlaylistsSong title="Here With Me" artist="Marshmello" duration="3 : 37" />
+                <PlaylistsSong title="Paradise" artist="Bazzi" duration="3 : 12" />
+                <PlaylistsSong title="Old Town Road" artist="Lil Nas" duration="3 : 58" />
+                <PlaylistsSong title="Don't Call Me Up" artist="Mabel" duration="2 : 46" />
+                <PlaylistsSong title="Let Me Down Slowly" artist="Alec Benjamin" duration="4 : 12" />
+                <PlaylistsSong title="Here With Me" artist="Marshmello" duration="3 : 37" />
+                <PlaylistsSong title="Paradise" artist="Bazzi" duration="3 : 12" />
+            </section>
             <MainNav />
         </main>
     )

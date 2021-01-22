@@ -6,7 +6,7 @@
 .playlists__backgroundImage{
     overflow: hidden;
     max-width: 100%;
-    grid-area: 1/1/2/2;
+    grid-area: 1/1/-1/-1;
 }
 
 .heading{
@@ -16,4 +16,8 @@
 
 .playlistsRotary{
     grid-area: 1/1/2/2;
+}
+
+.playlists__songs{
+    padding: 0 var(--borderPadding) 4rem var(--borderPadding);
 }
