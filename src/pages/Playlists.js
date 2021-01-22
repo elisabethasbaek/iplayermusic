@@ -1,13 +1,13 @@
-import "../Variables.css"; /* css */
-
 import Heading from "../components/Heading"; /* component */
 import BreadcrumbNavigation from "../components/BreadcrumbNavigation"; /* component */
 import MainNav from "../components/MainNav"; /* component */
+import PlaylistsRotary from "../components/PlaylistsRotary"; /* component */
+import PlaylistsSong from "../components/PlaylistsSong"; /* component */
+import PlaylistsButton from "../components/PlaylistsButton"; /* component */
+import "../Variables.css"; /* css */
 import "../components/style/Main.css"; /* css */
 import "../components/style/Playlists.css" /* css */
 import "../Variables.css"; /* css */
-import PlaylistsRotary from "../components/PlaylistsRotary";
-import PlaylistsSong from "../components/PlaylistsSong";
 
 export default function Playlists(){
     return(
@@ -15,6 +15,7 @@ export default function Playlists(){
             <img src="../sound-wave.svg" alt="" className="playlists__backgroundImage" />
             <BreadcrumbNavigation color="rgba(0,0,0,0.0)">Playlists</BreadcrumbNavigation>
             <Heading>Playlists</Heading> 
+
             <PlaylistsRotary />
             <section className="playlists__songs">
                 <PlaylistsSong title="Old Town Road" artist="Lil Nas" duration="3 : 58" />
@@ -33,6 +34,8 @@ export default function Playlists(){
                 <PlaylistsSong title="Here With Me" artist="Marshmello" duration="3 : 37" />
                 <PlaylistsSong title="Paradise" artist="Bazzi" duration="3 : 12" />
             </section>
+            <PlaylistsButton text="Listen all" />
+
             <MainNav filterMic="brightness(10000%)" />
         </main>
     )

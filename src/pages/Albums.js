@@ -3,10 +3,10 @@ import Heading from "../components/Heading"; /* component */
 import MainNav from "../components/MainNav"; /* component */
 import AlbumsFeatured from "../components/AlbumsFeatured"; /* component */
 import AlbumsHeading from "../components/AlbumsHeading"; /* component */
+import AlbumsNewReleases from "../components/AlbumsNewReleases"; /* component */
 import "../components/style/Main.css"; /* css */
 import "../components/style/Albums.css"; /* css */
 import "../Variables.css"; /* css */
-import AlbumsNewReleases from "../components/AlbumsNewReleases";
 
 export default function Albums(){
     return(

@@ -1,9 +1,9 @@
-import "../Variables.css";
-import FeaturedCard from "../components/FeaturedCard";
+import FeaturedCard from "../components/FeaturedCard"; /* component */
 import MainNav from "../components/MainNav"; /* component */
-import Heading from "../components/Heading";
-import "../components/style/Main.css";
-import BreadcrumbNavigation from "../components/BreadcrumbNavigation";
+import Heading from "../components/Heading"; /* component */
+import BreadcrumbNavigation from "../components/BreadcrumbNavigation"; /* component */
+import "../Variables.css"; /* css */
+import "../components/style/Main.css"; /* css */
 
 export default function Featured(){
     return(

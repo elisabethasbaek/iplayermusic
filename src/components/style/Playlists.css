@@ -1,6 +1,7 @@
 .playlists{
     display: grid;
     padding: 0;
+    padding-bottom: 6rem;
 }
 
 .playlists .playlists__backgroundImage{
@@ -19,5 +20,5 @@
 }
 
 .playlists .playlists__songs{
-    padding: 0 var(--borderPadding) 6rem var(--borderPadding);
+    padding: 0 var(--borderPadding) 1rem var(--borderPadding);
 }
