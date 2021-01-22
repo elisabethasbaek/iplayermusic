@@ -1,0 +1,16 @@
+.albums{
+    padding: 0 0 0 0;
+}
+
+.albums__featuredImages{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    gap: 0.8rem;
+    padding-left: var(--borderPadding);
+}
+
+.albums .heading{
+    padding: 2em var(--borderPadding) 0 var(--borderPadding);
+}

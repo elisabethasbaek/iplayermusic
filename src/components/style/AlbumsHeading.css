@@ -1,0 +1,22 @@
+.albumsHeading{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem var(--borderPadding);
+    font-family: var(--fontFamily);
+}
+
+.albumsHeading__heading{
+    color: #FFF;
+    font-weight: bold;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.albumsHeading__viewAll{
+    color: var(--primaryColor);
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    margin: 0;
+    font-weight: 200;
+    text-decoration: none;
+}
