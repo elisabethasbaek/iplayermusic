@@ -4,10 +4,10 @@ import PlayerImage from "../components/PlayerImage"; /* component */
 import MainNav from "../components/MainNav"; /* component */
 import PlayerSlider from "../components/PlayerSlider"; /* component */
 import PlayerNavigation from "../components/PlayerNavigation"; /* component */
+import PlayerText from "../components/PlayerText"; /* component */
 import "../components/style/Main.css"; /* css */
 import "../components/style/Player.css"; /* css */
 import "../Variables.css"; /* css */
-import PlayerText from "../components/PlayerText";
 
 export default function Player(){
     return(
