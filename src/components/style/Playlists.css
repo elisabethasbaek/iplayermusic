@@ -1,0 +1,19 @@
+.playlists{
+    display: grid;
+    padding: 0;
+}
+
+.playlists__backgroundImage{
+    overflow: hidden;
+    max-width: 100%;
+    grid-area: 1/1/2/2;
+}
+
+.heading{
+    padding: 2em var(--borderPadding);
+    grid-area: 1/1/2/2;
+}
+
+.playlistsRotary{
+    grid-area: 1/1/2/2;
+}

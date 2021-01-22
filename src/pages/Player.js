@@ -11,8 +11,7 @@ import PlayerText from "../components/PlayerText";
 
 export default function Player(){
     return(
-        <main className="main player">
-            {/* <img src="https://picsum.photos/2000/2000" alt="" className="backgroundImage" /> */}
+        <main className="main player" style={{backgroundImage: `url("https://picsum.photos/2000/2000")`}}>
             <BreadcrumbNavigation color="rgba(0,0,0,0.0)" display="none">Playing</BreadcrumbNavigation>
             <PlayerImage />
             <PlayerText title="Title of dope ass song" artist="The fucking artist bruh" />
