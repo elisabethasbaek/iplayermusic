@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0.5rem var(--borderPadding);
-    color: #FFF;
+    color: var(--white);
     font-family: var(--fontFamily);
     font-size: 0.8rem;
 }

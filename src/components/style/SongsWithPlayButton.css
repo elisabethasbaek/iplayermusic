@@ -22,7 +22,7 @@
 }
 
 .songsWithPlayButton__textContainer{
-    color: #FFF;
+    color: var(--white);
     font-family: var(--fontFamily);
     margin-top: 0.2rem;
     margin-left: 0.8rem;
@@ -47,7 +47,7 @@
 
 .songsWithPlayButton__duration{
     font-family: var(--fontFamily);
-    color: #FFF;
+    color: var(--white);
     font-size: 0.7rem;
     text-align: end;
     margin: 0;

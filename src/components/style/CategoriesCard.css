@@ -9,7 +9,7 @@
 }
 
 .categoriesCard__text{
-    color: #FFF;
+    color: var(--white);
     line-height: 2.5rem;
     font-family: var(--fontFamily);
     font-size: 0.8rem;

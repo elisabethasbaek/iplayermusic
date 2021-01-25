@@ -1,6 +1,6 @@
 .albumDetailsNumberSongs{
     font-family: var(--fontFamily);
-    color: #FFF;
+    color: var(--white);
     font-weight: 600;
     padding: 0 var(--borderPadding);
     font-size: 0.9rem;

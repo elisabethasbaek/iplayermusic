@@ -6,6 +6,7 @@ import AlbumDetailsNumberSongs from "../components/AlbumDetailsNumberSongs"; /* 
 import "../components/style/Main.css"; /* css */
 import "../components/style/AlbumDetails.css"; /* css */
 import "../Variables.css"; /* css */
+import AlbumDetailsHashtag from "../components/AlbumDetailsHashtag";
 
 export default function AlbumDetails(){
     return(
@@ -16,8 +17,13 @@ export default function AlbumDetails(){
                 <Heading>Old Town Road</Heading>
                 <AlbumDetailsNumberSongs songs="12" className="albumDetails__numberOfSongs" />
                 <p className="albumDetails__genreHashtags">genre hashtags</p>
+                <div className="albumDetails__hashtagContainer">
+                    <AlbumDetailsHashtag tag="country" />
+                    <AlbumDetailsHashtag tag="country road" />
+                </div>
             </div>
             
+            <AlbumDetailsNumberSongs songs="All" />
             <section className="albumDetails__songs">
                 <SongsWithPlayButton title="Old Town Road" artist="Lil Nas" duration="3 : 58" />
                 <SongsWithPlayButton title="Don't Call Me Up" artist="Mabel" duration="2 : 46" />
