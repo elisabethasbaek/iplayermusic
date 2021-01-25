@@ -1,6 +1,6 @@
-import "../components/style/LoginField.css";
+import "../components/style/LogInField.css";
 
-export default function LoginField(props){
+export default function LogInField(props){
     return(
         <div className="loginField">
             <label htmlFor={props.forr}>{props.children}</label>
