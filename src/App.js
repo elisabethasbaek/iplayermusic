@@ -7,14 +7,14 @@ import Player from "./pages/Player";
 import Albums from "./pages/Albums";
 import AlbumDetails from "./pages/AlbumDetails";
 import Welcome from "./pages/Welcome";
-import LogIn from "./pages/LogIn";
+import Login from "./pages/Login";
 
 function App() {
   return (
     <>
       <Router>
         <Welcome path="/welcome"/>
-        <LogIn path="/login" />
+        <Login path="/login" />
         <Albums path="/albums" />
         <AlbumDetails path="/albums/albumdetails" />
         <Playlists path="/playlists" />

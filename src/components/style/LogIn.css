@@ -1,5 +1,5 @@
 .main.login{
-    -background-color: var(--primaryColor);
+    background-color: var(--primaryColor);
     display: flex;
     flex-direction: column;
 }
@@ -7,18 +7,25 @@
 .main.login .heading{
     filter: brightness(10000%);
     padding: 0;
+    margin-bottom: 20vh;
+}
+
+.main.login form{
+    align-self: end;
+    width: 100%;
 }
 
 .main.login .playlistsButton{
     border: 2px solid var(--white);
     color: var(--white);
-    margin: 0;
+    margin: 1rem 0 0 0;
 }
 
 .login__oneTouch{
     display: grid;
     grid-template-rows: auto auto;
     justify-items: center;
+    margin-top: 3rem;
 }
 
 .login__oneTouch img{
