@@ -6,7 +6,7 @@
 
 .songsWithPlayButton__playButton{
     border-radius: 50%;
-    background: var(--gradientHorizontalIcons);
+    background: var(--gradientHorizontal);
     outline: none;
     border: none;
     height: 1.8rem;

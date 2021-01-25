@@ -17,7 +17,7 @@
     display: grid;
     text-align: center;
     border-radius: 50%;
-    background: var(--gradientHorizontalIcons);
+    background: var(--gradientHorizontal);
     height: 70%;
     margin: auto 0;
 }

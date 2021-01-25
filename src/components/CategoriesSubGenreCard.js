@@ -4,7 +4,8 @@ export default function CategoriesSubGenreCard({subgenre}){
     return(
         <article className="categoriesSubGenreCard">
             <p className="categoriesSubGenreCard__text">{subgenre}</p>
-            <img src="../ChevronRight.svg" alt="Button to click to go to sub-genre" className="categoriesSubGenreCard__chevron" />
+            <img src="../ChevronRight.svg" alt="Button to click to
+             go to sub-genre" className="categoriesSubGenreCard__chevron" />
         </article>
     )
 };

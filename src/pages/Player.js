@@ -1,4 +1,3 @@
-import "../Variables.css";
 import BreadcrumbNavigation from "../components/BreadcrumbNavigation"; /* component */
 import PlayerImage from "../components/PlayerImage"; /* component */
 import MainNav from "../components/MainNav"; /* component */

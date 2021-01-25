@@ -2,9 +2,11 @@
     font-family: var(--fontFamily);
     background: var(--gradientHorizontal);
     color: var(--white);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 0;
     padding: var(--borderPadding) 0;
     font-size: 2.2rem;
+    display: inline-block;
 }
