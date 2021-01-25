@@ -1,7 +1,7 @@
 .heading{
     font-family: var(--fontFamily);
     background: var(--gradientHorizontal);
-    color: #FFF;
+    color: var(--white);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 0;

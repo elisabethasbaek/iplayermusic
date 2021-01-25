@@ -13,7 +13,7 @@
 
 .playlistsRotary__albumHeading{
     justify-self: center;
-    color: #FFF;
+    color: var(--white);
     max-width: 40vw;
     font-family: var(--fontFamily);
     text-align: center;

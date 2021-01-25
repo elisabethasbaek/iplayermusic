@@ -6,7 +6,7 @@
 .player__textContainer .player__title,
 .player__textContainer .player__artist{
     font-family: var(--fontFamily);
-    color: #FFF;
+    color: var(--white);
     text-align: center;
     margin: 0;
 }

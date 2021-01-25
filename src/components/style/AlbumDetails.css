@@ -1,0 +1,46 @@
+.albumDetails{
+    display: grid;
+    padding: 0;
+    padding-bottom: 6rem;
+}
+
+.albumDetails .albumDetails__backgroundImage{
+    overflow: hidden;
+    object-fit: cover;
+    width: 100%;
+    height: 55vh;
+    grid-area: 1/1/-1/-1;
+    margin-bottom: 2rem;
+}
+
+.albumDetails__detailContainer{
+    grid-area: 1/1/2/2;
+    display: grid;
+    grid-template-rows: 37% 30% 13% 20%;
+    max-height: 55vh;
+}
+
+.albumDetails .heading{
+    filter: brightness(100000%);
+    padding: 2em var(--borderPadding) 0 var(--borderPadding);
+}
+
+
+.albumDetails__hashtagContainer{
+    display: flex;
+    gap: 0.5rem;
+    padding: 0 var(--borderPadding);
+}
+
+.albumDetails__genreHashtags{
+    color: var(--white);
+    font-family: var(--fontFamily);
+    font-weight: 300;
+    font-size: 0.9rem;
+    padding: 0 var(--borderPadding);
+}
+
+.albumDetails .albumDetails__songs{
+    grid-area: 3/1/4/2;
+    padding: 0 var(--borderPadding) 1rem var(--borderPadding);
+}

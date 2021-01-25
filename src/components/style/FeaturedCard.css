@@ -27,7 +27,7 @@
     align-self: end;
     margin: var(--borderPadding);
     font-family: var(--fontFamily);
-    color: #FFF;
+    color: var(--white);
 }
 
 .featuredCard__artist{

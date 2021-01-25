@@ -1,10 +1,10 @@
-.playlistsSong{
+.songsWithPlayButton{
     display: grid;
     grid-template-columns: 0.6fr 4fr 1fr;
     margin: 0.5rem 0;
 }
 
-.playlistsSong__playButton{
+.songsWithPlayButton__playButton{
     border-radius: 50%;
     background: var(--gradientHorizontalIcons);
     outline: none;
@@ -16,19 +16,19 @@
     align-self: center;
 }
 
-.playlistsSong__playButton img{
+.songsWithPlayButton__playButton img{
     place-self: center;
     padding-left: 1.5px;
 }
 
-.playlistsSong__textContainer{
-    color: #FFF;
+.songsWithPlayButton__textContainer{
+    color: var(--white);
     font-family: var(--fontFamily);
     margin-top: 0.2rem;
     margin-left: 0.8rem;
 }
 
-.playlistsSong__song{
+.songsWithPlayButton__song{
     font-weight: bold;
     font-size: 0.9rem;
     margin: 0;
@@ -37,7 +37,7 @@
     text-overflow: ellipsis;
 }
 
-.playlistsSong__artist{
+.songsWithPlayButton__artist{
     font-weight: 300;
     font-size: 0.7rem;
     margin: 0;
@@ -45,9 +45,9 @@
     text-overflow: ellipsis;
 }
 
-.playlistsSong__duration{
+.songsWithPlayButton__duration{
     font-family: var(--fontFamily);
-    color: #FFF;
+    color: var(--white);
     font-size: 0.7rem;
     text-align: end;
     margin: 0;
