@@ -13,6 +13,7 @@
 .playlists .heading{
     padding: 2em var(--borderPadding);
     grid-area: 1/1/2/2;
+    filter: brightness(10000%);
 }
 
 .playlists .playlistsRotary{
