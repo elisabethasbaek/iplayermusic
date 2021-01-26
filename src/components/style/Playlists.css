@@ -11,7 +11,8 @@
 }
 
 .playlists .heading{
-    padding: 2em var(--borderPadding);
+    margin: 4.5rem var(--borderPadding);
+    padding-top: 0;
     grid-area: 1/1/2/2;
     filter: brightness(10000%);
 }
