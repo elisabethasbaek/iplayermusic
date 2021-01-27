@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import {Router} from "@reach/router"
+import TokenContext from "./TokenContext";
 import Featured from "./pages/Featured";
 import Categories from "./pages/Categories";
 import Playlists from "./pages/Playlists";
@@ -11,8 +12,10 @@ import LogIn from "./pages/LogIn";
 import Callback from "./pages/Callback";
 
 function App() {
+  var tokenState = useState(null);
+
   return (
-    <>
+    <TokenContext.Provider value={tokenState}>
       <Router>
         <LogIn default />
         <Callback path="/callback" />
@@ -24,7 +27,7 @@ function App() {
         <Featured path="/featured" />
         <Categories path="/categories" />
       </Router>
-    </>
+    </TokenContext.Provider>
   );
 }
 

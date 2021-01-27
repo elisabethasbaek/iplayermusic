@@ -1,11 +1,26 @@
+import TokenContext from "../TokenContext";
 import FeaturedCard from "../components/FeaturedCard"; /* component */
 import MainNav from "../components/MainNav"; /* component */
 import Heading from "../components/Heading"; /* component */
 import BreadcrumbNavigation from "../components/BreadcrumbNavigation"; /* component */
 import "../Variables.css"; /* css */
 import "../components/style/Main.css"; /* css */
+import { useContext, useEffect, useState } from "react";
+import axios from "axios";
 
 export default function Featured(){
+    var [token] = useContext(TokenContext);
+    var [content, setContent] = useState({});
+
+    useEffect(function(){
+        axios.get("https://api.spotify.com/v1/me", {
+            headers: {
+                "Authorization": "Bearer " + token.access_token
+            }
+        })
+        .then(response => setContent(response.data));
+    }, [token, setContent]);
+
     return(
         <main className="main featured">
             <BreadcrumbNavigation color="var(--secondaryColor)">Featured</BreadcrumbNavigation>
