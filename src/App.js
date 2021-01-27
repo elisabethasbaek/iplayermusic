@@ -8,18 +8,20 @@ import Albums from "./pages/Albums";
 import AlbumDetails from "./pages/AlbumDetails";
 import Welcome from "./pages/Welcome";
 import LogIn from "./pages/LogIn";
+import Callback from "./pages/Callback";
 
 function App() {
   return (
     <>
       <Router>
+        <LogIn default />
+        <Callback path="/callback" />
         <Welcome path="/welcome"/>
-        <LogIn path="/login" />
         <Albums path="/albums" />
         <AlbumDetails path="/albums/albumdetails" />
         <Playlists path="/playlists" />
         <Player path="/playlists/player" />
-        <Featured path="/" />
+        <Featured path="/featured" />
         <Categories path="/categories" />
       </Router>
     </>

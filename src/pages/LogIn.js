@@ -17,13 +17,13 @@ export default function LogIn(){
     return(
         <main className="main login">
             <Heading>Log In</Heading>
+
+            <a href={`https://accounts.spotify.com/authorize?${queryParameters}`}>Log in with Spotify</a> {/* style me oh god please */}
+
             <form>
                 <LogInField forr="username" type="text" placeholder="Enter your username" icon="../User.svg">Username</LogInField>
                 <LogInField forr="password" type="password" placeholder="Enter your password" icon="../Key.svg">Password</LogInField>
             </form>
-
-            <a href={`https://accounts.spotify.com/authorize?${queryParameters}`}>Log in with Spotify</a> {/* style me oh god please */}
-
             <PlaylistsButton text="Log In" album="/" />
             <article className="login__oneTouch">
                 <img src="../Touch.svg" alt="Touch for one-touch login"/>
