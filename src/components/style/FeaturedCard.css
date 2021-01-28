@@ -35,6 +35,9 @@
     font-size: 1.7rem;
     line-height: 2.5rem;
     margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 70vw;
 }
 
 .featuredCard__category{
@@ -43,4 +46,5 @@
     line-height: 1.5rem;
     margin: 0;
     padding-bottom: 0.8rem;
+    text-transform: capitalize;
 }
