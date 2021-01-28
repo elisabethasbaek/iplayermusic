@@ -22,6 +22,7 @@ function App() {
         <Welcome path="/welcome"/>
         <Albums path="/albums" />
         <AlbumDetails path="/albums/albumdetails" />
+        <Playlists path="/playlists/:name" />
         <Playlists path="/playlists" />
         <Player path="/playlists/player" />
         <Featured path="/featured" />

@@ -1,10 +1,10 @@
-import TokenContext from "../TokenContext";
 import FeaturedCard from "../components/FeaturedCard"; /* component */
 import MainNav from "../components/MainNav"; /* component */
 import Heading from "../components/Heading"; /* component */
 import BreadcrumbNavigation from "../components/BreadcrumbNavigation"; /* component */
 import "../Variables.css"; /* css */
 import "../components/style/Main.css"; /* css */
+import TokenContext from "../TokenContext";
 import { useContext, useEffect, useState } from "react";
 import axios from "axios";
 
