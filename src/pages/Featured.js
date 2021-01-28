@@ -30,7 +30,7 @@ export default function Featured(){
            
            {content.playlists?.items.map(function(item){
                return(
-                   <FeaturedCard image={item.images[0].url} artist={item.name} category={item.type} />
+                   <FeaturedCard key={item.id} image={item.images[0].url} artist={item.name} category={item.type} />
                )
            })}
 
