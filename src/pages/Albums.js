@@ -1,3 +1,6 @@
+import TokenContext from "../TokenContext";
+import { useContext, useEffect, useState } from "react";
+import axios from "axios";
 import BreadcrumbNavigation from "../components/BreadcrumbNavigation"; /* component */
 import Heading from "../components/Heading"; /* component */
 import MainNav from "../components/MainNav"; /* component */
@@ -9,6 +12,20 @@ import "../components/style/Albums.css"; /* css */
 import "../Variables.css"; /* css */
 
 export default function Albums(){
+    var [token] = useContext(TokenContext);
+    var [content, setContent] = useState({});
+
+    useEffect(function(){
+        axios.get("https://api.spotify.com/v1/albums?id=43977e0YlJeMXG77uCCSMX", {
+            headers: {
+                "Authorization": "Bearer " + token.access_token
+            }
+        })
+        .then(function (response){
+            setContent(response.data);
+            console.log(content);
+        })}, [token, setContent]);
+
     return(
         <main className="main albums">
             <BreadcrumbNavigation color="var(--secondaryColor)">Music</BreadcrumbNavigation>

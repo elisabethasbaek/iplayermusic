@@ -20,7 +20,7 @@ export default function Featured(){
         })
         .then(function (response){
             setContent(response.data);
-            console.log(content.playlists?.items)
+            //console.log(content.playlists?.items)
         })}, [token, setContent]);
 
     return(

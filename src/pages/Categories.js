@@ -11,36 +11,27 @@ import "../components/style/Categories.css";
 
 export default function Categories(){
     var [token] = useContext(TokenContext);
-    var [content, setContent] = useState({});
+    var [content, setContent] = useState([]);
 
     useEffect(function(){
-        axios.get("https://api.spotify.com/v1/browse/categories", {
+        axios.get("https://api.spotify.com/v1/recommendations/available-genre-seeds", {
             headers: {
                 "Authorization": "Bearer " + token.access_token
             }
         })
         .then(function (response){
             setContent(response.data);
-            console.log(content.categories?.items)
+            //console.log(content.genres)
         })}, [token, setContent]);
-
-    /* var colors = ["var(--primaryColor)", "var(--coral)", "var(--orange)", "var(--yellow)", "var(--lightGreen)", "var(--darkGreen)", "var(--lightBlue)", "var(--blue)", "var(--darkBlue)"];
-
-    function colorsLoop() {
-        for (let i = 0; i < colors.length; i++){
-            colors[i];
-        }
-    }
-    console.log(colorsLoop) */
 
     return(
         <main className="main categories">
             <BreadcrumbNavigation color="var(--secondaryColor)">Categories</BreadcrumbNavigation>
             <Heading>Categories</Heading>
 
-            {content.categories?.items.map(function(item){
+            {content.genres?.map(function(item){
                return(
-                    <CategoriesCard key={item.id} genre={item.name} name={"/playlists/" + item.id} />
+                    <CategoriesCard key={item} genre={item} name={"/playlists/" + item} />
                )
            })}
 
