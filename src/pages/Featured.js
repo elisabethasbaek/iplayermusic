@@ -13,23 +13,27 @@ export default function Featured(){
     var [content, setContent] = useState({});
 
     useEffect(function(){
-        axios.get("https://api.spotify.com/v1/me", {
+        axios.get("https://api.spotify.com/v1/browse/featured-playlists", {
             headers: {
                 "Authorization": "Bearer " + token.access_token
             }
         })
-        .then(response => setContent(response.data));
-    }, [token, setContent]);
+        .then(function (response){
+            setContent(response.data);
+            console.log(content.playlists?.items)
+        })}, [token, setContent]);
 
     return(
         <main className="main featured">
             <BreadcrumbNavigation color="var(--secondaryColor)">Featured</BreadcrumbNavigation>
             <Heading>Featured</Heading>
-            <FeaturedCard image="https://picsum.photos/600/900?random=1" artist="The Greatest Showman" category="Soundtrack" />
-            <FeaturedCard image="https://picsum.photos/600/900?random=2" artist="The Greatest Showman" category="Soundtrack" />
-            <FeaturedCard image="https://picsum.photos/600/900?random=3" artist="The Greatest Showman" category="Soundtrack" />
-            <FeaturedCard image="https://picsum.photos/600/900?random=4" artist="The Greatest Showman" category="Soundtrack" />
-            <FeaturedCard image="https://picsum.photos/600/900?random=5" artist="The Greatest Showman" category="Soundtrack" />
+           
+           {content.playlists?.items.map(function(item){
+               return(
+                   <FeaturedCard image={item.images[0].url} artist={item.name} category={item.type} />
+               )
+           })}
+
             <MainNav filterWifi="brightness(10000%)"/>
         </main>
     )
