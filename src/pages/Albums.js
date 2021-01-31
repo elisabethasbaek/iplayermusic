@@ -16,14 +16,14 @@ export default function Albums(){
     var [content, setContent] = useState({});
 
     useEffect(function(){
-        axios.get("https://api.spotify.com/v1/albums?id=43977e0YlJeMXG77uCCSMX", {
+        axios.get("https://api.spotify.com/v1/albums", {
             headers: {
                 "Authorization": "Bearer " + token.access_token
             }
         })
         .then(function (response){
             setContent(response.data);
-            console.log(content);
+            console.log(content.albums?.items);
         })}, [token, setContent]);
 
     return(

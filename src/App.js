@@ -26,6 +26,7 @@ function App() {
         <Playlists path="/playlists" />
         <Player path="/playlists/player" />
         <Featured path="/featured" />
+        <Featured path="/featured/:id" />
         <Categories path="/categories" />
       </Router>
     </TokenContext.Provider>
