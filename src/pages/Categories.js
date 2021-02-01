@@ -14,14 +14,14 @@ export default function Categories(){
     var [content, setContent] = useState([]);
 
     useEffect(function(){
-        axios.get("https://api.spotify.com/v1/recommendations/available-genre-seeds", {
+        axios.get("https://api.spotify.com/v1/browse/categories", {
             headers: {
                 "Authorization": "Bearer " + token.access_token
             }
         })
         .then(function (response){
             setContent(response.data);
-            //console.log(content.genres)
+            //console.log(content.categories.items)
         })}, [token, setContent]);
 
     return(
@@ -29,9 +29,9 @@ export default function Categories(){
             <BreadcrumbNavigation color="var(--secondaryColor)">Categories</BreadcrumbNavigation>
             <Heading>Categories</Heading>
 
-            {content.genres?.map(function(item){
+            {content.categories?.items.map(function(item){
                return(
-                    <CategoriesCard key={item} genre={item} name={"/playlists/" + item} />
+                    <CategoriesCard id={item.id} key={item} genre={item.name} name={"/playlists/" + item.id} />
                )
            })}
 

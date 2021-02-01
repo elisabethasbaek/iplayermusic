@@ -7,6 +7,10 @@
     font-size: 0.8rem;
 }
 
+.categoriesSubGenreCard:last-of-type{
+    padding: 0.5rem var(--borderPadding) 2rem var(--borderPadding);
+}
+
 .categoriesSubGenreCard__text{
     margin: 0;
 }

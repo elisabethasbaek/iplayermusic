@@ -23,7 +23,7 @@ export default function Albums(){
         })
         .then(function (response){
             setContent(response.data);
-            console.log(content.albums?.items);
+            //console.log(content.albums?.items);
         })}, [token, setContent]);
 
     return(

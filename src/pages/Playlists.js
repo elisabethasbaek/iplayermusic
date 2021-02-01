@@ -36,7 +36,7 @@ export default function Playlists(props){
         })
         .then(function (response){
             setPlaylist(response.data);
-            console.log(response.data)
+            console.log(playlist)
     })}, [token, setPlaylist]);
 
     return(
