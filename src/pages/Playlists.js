@@ -52,24 +52,10 @@ export default function Playlists(props){
                         <SongsWithPlayButton title={item.title} artist={item.artist} duration="3 : 58" />
                     )
                 })}
-                <SongsWithPlayButton title="Don't Call Me Up" artist="Mabel" duration="2 : 46" />
-                <SongsWithPlayButton title="Let Me Down Slowly" artist="Alec Benjamin" duration="4 : 12" />
-                <SongsWithPlayButton title="Here With Me" artist="Marshmello" duration="3 : 37" />
-                <SongsWithPlayButton title="Paradise" artist="Bazzi" duration="3 : 12" />
-                <SongsWithPlayButton title="Old Town Road" artist="Lil Nas" duration="3 : 58" />
-                <SongsWithPlayButton title="Don't Call Me Up" artist="Mabel" duration="2 : 46" />
-                <SongsWithPlayButton title="Let Me Down Slowly" artist="Alec Benjamin" duration="4 : 12" />
-                <SongsWithPlayButton title="Here With Me" artist="Marshmello" duration="3 : 37" />
-                <SongsWithPlayButton title="Paradise" artist="Bazzi" duration="3 : 12" />
-                <SongsWithPlayButton title="Old Town Road" artist="Lil Nas" duration="3 : 58" />
-                <SongsWithPlayButton title="Don't Call Me Up" artist="Mabel" duration="2 : 46" />
-                <SongsWithPlayButton title="Let Me Down Slowly" artist="Alec Benjamin" duration="4 : 12" />
-                <SongsWithPlayButton title="Here With Me" artist="Marshmello" duration="3 : 37" />
-                <SongsWithPlayButton title="Paradise" artist="Bazzi" duration="3 : 12" />
             </section>
             <PlaylistsButton album="/playlists/player" text="Listen all" />
 
             <MainNav filterMic="brightness(10000%)" />
-        {/* </main> */}
+        </main>
     )
 }

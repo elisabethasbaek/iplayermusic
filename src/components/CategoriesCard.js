@@ -37,7 +37,7 @@ export default function CategoriesCard(props){
             <section className={"subGenreContainer " + (open ? "" : "subGenreContainer--hidden")}>
                 {content.playlists?.items.map(function(item){
                     return(
-                        <CategoriesSubGenreCard subgenre={item.name} />
+                        <CategoriesSubGenreCard href={"/playlists/" + item.id} subgenre={item.name} />
                     )
                 })}
             </section>
