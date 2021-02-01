@@ -70,6 +70,6 @@ export default function Playlists(props){
             <PlaylistsButton album="/playlists/player" text="Listen all" />
 
             <MainNav filterMic="brightness(10000%)" />
-        </main>
+        {/* </main> */}
     )
 }

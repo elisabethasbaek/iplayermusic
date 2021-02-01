@@ -7,7 +7,6 @@ import "../components/style/Main.css"; /* css */
 import TokenContext from "../TokenContext";
 import { useContext, useEffect, useState } from "react";
 import axios from "axios";
-/* import axios from "axios"; */
 
 export default function Featured(props){
     var [token] = useContext(TokenContext);
