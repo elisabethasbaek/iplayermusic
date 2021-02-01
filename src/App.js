@@ -10,6 +10,7 @@ import AlbumDetails from "./pages/AlbumDetails";
 import Welcome from "./pages/Welcome";
 import LogIn from "./pages/LogIn";
 import Callback from "./pages/Callback";
+/* import Callback from "./pages/Callback"; */
 
 function App() {
   var tokenState = useState(null);

@@ -21,7 +21,7 @@ export default function Categories(){
         })
         .then(function (response){
             setContent(response.data);
-            //console.log(content.categories.items)
+            //console.log(content.categories.items);
         })}, [token, setContent]);
 
     return(

@@ -5,6 +5,7 @@
     color: var(--white);
     font-family: var(--fontFamily);
     font-size: 0.8rem;
+    -font-size: 0.8rem;
 }
 
 .categoriesSubGenreCard:last-of-type{

@@ -41,6 +41,7 @@ export default function CategoriesCard(props){
                     )
                 })}
             </section>
+            {/* </section> */}
         </>
     )
 };
