@@ -66,6 +66,7 @@ export default function Playlists(props){
                     <SongsWithPlayButton
                     key={track.id}
                     title={track.name}
+                    href={"/playlists/player"}
                     artist={track.artists[0].name}
                     duration={track.duration_ms} />
                 ))}

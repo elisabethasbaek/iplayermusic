@@ -1,13 +1,14 @@
 import "../components/style/SongsWithPlayButton.css";
 import "../Variables.css";
 import timeConvert from "../components/TimeConverter";
+import { Link } from "@reach/router";
 
-export default function SongsWithPlayButton({title, artist, duration}) {
+export default function SongsWithPlayButton({href, title, artist, duration}) {
     return (
         <section className="songsWithPlayButton">
-            <button className="songsWithPlayButton__playButton">
+            <Link to={href} className="songsWithPlayButton__playButton">
                 <img src="../Play2.svg" alt="Click to play song button"/>
-            </button>
+            </Link>
             <section className="songsWithPlayButton__textContainer">
                 <p className="songsWithPlayButton__song">{title}</p>
                 <p className="songsWithPlayButton__artist">{artist}</p>
