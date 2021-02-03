@@ -16,7 +16,7 @@ import axios from "axios";
 export default function Playlists(props){
     var [token] = useContext(TokenContext);
     var [tracks, setTracks] = useState([]);
-    var [currentPlaylist, setCurrentPlaylist] = useState(null);
+    var [currentPlaylist, setCurrentPlaylist] = useState("uh-oh!");
     var [playlists, setPlaylists] = useState([]);
 
     useEffect(function(){
@@ -52,13 +52,13 @@ export default function Playlists(props){
             <section className="playlistsRotary">
                 {playlists.map(list => (
                     <PlaylistsRotarySegment
-                    key={list.id}
                     href={"/playlists/" + list.id}
                     onClick={() => setCurrentPlaylist(list.id)}
                     image={list.images[0].url}
+                    key={list.id}
                     artist={list.name}
                     album={list.name}/>
-                    ))}
+                ))}
             </section>
 
             <section className="playlists__songs">
@@ -68,7 +68,7 @@ export default function Playlists(props){
                     title={track.name}
                     artist={track.artists[0].name}
                     duration={track.duration_ms} />
-                    ))}
+                ))}
             </section>
 
             <PlaylistsButton
