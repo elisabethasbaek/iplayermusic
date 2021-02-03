@@ -4,7 +4,6 @@ import MainNav from "../components/MainNav"; /* component */
 import SongsWithPlayButton from "../components/SongsWithPlayButton"; /* component */
 import PlaylistsButton from "../components/PlaylistsButton"; /* component */
 import PlaylistsRotarySegment from "../components/PlaylistsRotarySegment";
-//import timeConverter from "../components/TimeConverter";
 import "../Variables.css"; /* css */
 import "../components/style/Main.css"; /* css */
 import "../components/style/Playlists.css" /* css */
@@ -40,9 +39,10 @@ export default function Playlists(props){
         })
         .then(function (response){
             setTracks(response.data);
-            console.log(response.data);
     })}, [token, currentPlaylist, setTracks]);
-
+    
+    console.log(currentPlaylist); /* currentPlaylist console log her her her */
+    
     return(
         <main className="main playlists">
             <img src="../sound-wave.svg" alt="" className="playlists__backgroundImage" />
@@ -51,17 +51,29 @@ export default function Playlists(props){
 
             <section className="playlistsRotary">
                 {playlists.map(list => (
-                    <PlaylistsRotarySegment key={list.id} href={"/playlists/" + list.id} onClick={() => setCurrentPlaylist(list.id)} image={list.images[0].url} artist={list.name} album={list.name}/>
-                ))}
+                    <PlaylistsRotarySegment
+                    key={list.id}
+                    href={"/playlists/" + list.id}
+                    onClick={() => setCurrentPlaylist(list.id)}
+                    image={list.images[0].url}
+                    artist={list.name}
+                    album={list.name}/>
+                    ))}
             </section>
 
             <section className="playlists__songs">
                 {tracks.items?.map(({track}) => (
-                    <SongsWithPlayButton key={track.id} title={track.name} artist={track.artists[0].name} duration={track.duration_ms} />
-                ))}
+                    <SongsWithPlayButton
+                    key={track.id}
+                    title={track.name}
+                    artist={track.artists[0].name}
+                    duration={track.duration_ms} />
+                    ))}
             </section>
 
-            <PlaylistsButton album="/playlists/player" text="Listen all" />
+            <PlaylistsButton
+            album="/playlists/player"
+            text="Listen all" />
 
             <MainNav filterMic="brightness(10000%)" />
         </main>

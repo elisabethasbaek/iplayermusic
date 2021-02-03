@@ -1,5 +1,6 @@
 import "../components/style/SongsWithPlayButton.css";
 import "../Variables.css";
+import timeConvert from "../components/TimeConverter";
 
 export default function SongsWithPlayButton({title, artist, duration}) {
     return (
@@ -11,9 +12,7 @@ export default function SongsWithPlayButton({title, artist, duration}) {
                 <p className="songsWithPlayButton__song">{title}</p>
                 <p className="songsWithPlayButton__artist">{artist}</p>
             </section>
-            <p className="songsWithPlayButton__duration">{duration}</p>
+            <p className="songsWithPlayButton__duration">{timeConvert(duration)}</p>
         </section>
     )
 }
-
-/* timeConvert(duration) */
