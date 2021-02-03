@@ -15,3 +15,5 @@ export default function SongsWithPlayButton({title, artist, duration}) {
         </section>
     )
 }
+
+/* timeConvert(duration) */

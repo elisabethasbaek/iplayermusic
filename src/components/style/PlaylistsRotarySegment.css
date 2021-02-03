@@ -1,5 +1,6 @@
 .playlistsRotary__segment{
     justify-self: center;
+    text-decoration: none;
 }
 
 .playlistsRotary__image{
@@ -21,5 +22,4 @@
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: 1.2rem;
-    /* might need different styling once I see the names of the albums */
 }

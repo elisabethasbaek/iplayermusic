@@ -1,21 +1,24 @@
 import Heading from "../components/Heading"; /* component */
 import BreadcrumbNavigation from "../components/BreadcrumbNavigation"; /* component */
 import MainNav from "../components/MainNav"; /* component */
-import PlaylistsRotary from "../components/PlaylistsRotary"; /* component */
 import SongsWithPlayButton from "../components/SongsWithPlayButton"; /* component */
 import PlaylistsButton from "../components/PlaylistsButton"; /* component */
+import PlaylistsRotarySegment from "../components/PlaylistsRotarySegment";
+//import timeConverter from "../components/TimeConverter";
 import "../Variables.css"; /* css */
 import "../components/style/Main.css"; /* css */
 import "../components/style/Playlists.css" /* css */
 import "../Variables.css"; /* css */
+import "../components/style/PlaylistsRotary.css";
 import TokenContext from "../TokenContext";
 import { useContext, useEffect, useState } from "react";
 import axios from "axios";
 
 export default function Playlists(props){
     var [token] = useContext(TokenContext);
-    var [content, setContent] = useState({});
-    var [playlist, setPlaylist] = useState({});
+    var [tracks, setTracks] = useState([]);
+    var [currentPlaylist, setCurrentPlaylist] = useState(null);
+    var [playlists, setPlaylists] = useState([]);
 
     useEffect(function(){
         axios.get("https://api.spotify.com/v1/me/playlists", {
@@ -24,20 +27,21 @@ export default function Playlists(props){
             }
         })
         .then(function (response){
-            setContent(response.data);
-            //console.log(response.data)
-    })}, [token, setContent]);
+            setPlaylists(response.data.items);
+            console.log(response.data.items)
+    })}, [token, setPlaylists]);
 
     useEffect(function(){
-        axios.get("https://api.spotify.com/v1/me/playlists/" + props.id, {
+        if(currentPlaylist)
+        axios.get("https://api.spotify.com/v1/playlists/" + currentPlaylist + "/tracks", {
             headers: {
                 "Authorization": "Bearer " + token.access_token
             }
         })
         .then(function (response){
-            setPlaylist(response.data);
-            console.log(playlist)
-    })}, [token, setPlaylist]);
+            setTracks(response.data);
+            console.log(response.data);
+    })}, [token, currentPlaylist, setTracks]);
 
     return(
         <main className="main playlists">
@@ -45,14 +49,18 @@ export default function Playlists(props){
             <BreadcrumbNavigation color="rgba(0,0,0,0.0)">Playlists</BreadcrumbNavigation>
             <Heading>Playlists</Heading> 
 
-            <PlaylistsRotary />
-            <section className="playlists__songs">
-                {content.playlists?.items.map(function(item){
-                    return(
-                        <SongsWithPlayButton title={item.title} artist={item.artist} duration="3 : 58" />
-                    )
-                })}
+            <section className="playlistsRotary">
+                {playlists.map(list => (
+                    <PlaylistsRotarySegment key={list.id} href={"/playlists/" + list.id} onClick={() => setCurrentPlaylist(list.id)} image={list.images[0].url} artist={list.name} album={list.name}/>
+                ))}
             </section>
+
+            <section className="playlists__songs">
+                {tracks.items?.map(({track}) => (
+                    <SongsWithPlayButton key={track.id} title={track.name} artist={track.artists[0].name} duration={track.duration_ms} />
+                ))}
+            </section>
+
             <PlaylistsButton album="/playlists/player" text="Listen all" />
 
             <MainNav filterMic="brightness(10000%)" />
