@@ -41,8 +41,6 @@ export default function Playlists(props){
             setTracks(response.data);
     })}, [token, currentPlaylist, setTracks]);
     
-    console.log(currentPlaylist); /* currentPlaylist console log her her her */
-    
     return(
         <main className="main playlists">
             <img src="../sound-wave.svg" alt="" className="playlists__backgroundImage" />
@@ -55,16 +53,17 @@ export default function Playlists(props){
                     href={"/playlists/" + list.id}
                     onClick={() => setCurrentPlaylist(list.id)}
                     image={list.images[0].url}
-                    key={list.id}
+                    key={list.snapshot_id}
                     artist={list.name}
                     album={list.name}/>
-                ))}
+                    ))}
             </section>
+
 
             <section className="playlists__songs">
                 {tracks.items?.map(({track}) => (
                     <SongsWithPlayButton
-                    key={track.id}
+                    key={track.snapshot_id}
                     title={track.name}
                     href={"/playlists/player"}
                     artist={track.artists[0].name}
@@ -73,7 +72,7 @@ export default function Playlists(props){
             </section>
 
             <PlaylistsButton
-            album="/playlists/player"
+            album="/playlists/player/"
             text="Listen all" />
 
             <MainNav filterMic="brightness(10000%)" />
