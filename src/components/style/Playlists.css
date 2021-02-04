@@ -1,5 +1,6 @@
 .playlists{
     display: grid;
+    grid-template-rows: 22vh 40vh 1fr 1fr;
     padding: 0;
     padding-bottom: 6rem;
 }
@@ -11,14 +12,14 @@
 }
 
 .playlists .heading{
-    margin: 4.5rem var(--borderPadding);
+    margin: 4.5rem var(--borderPadding) 0 var(--borderPadding);
     padding-top: 0;
     grid-area: 1/1/2/2;
     filter: brightness(10000%);
 }
 
 .playlists .playlistsRotary{
-    grid-area: 1/1/2/2;
+    grid-area: 2/1/3/2;
     z-index: 10;
 }
 
