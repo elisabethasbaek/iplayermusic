@@ -4,7 +4,7 @@ import "../components/style/PlaylistsButton.css";
 export default function PlaylistsButton({album, text}){
     return(
         <>
-        <Link to="{album}" className="playlistsButton">{text}</Link>
+        <Link to={album} className="playlistsButton">{text}</Link>
         </>
     )
 };

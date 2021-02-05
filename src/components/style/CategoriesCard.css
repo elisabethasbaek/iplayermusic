@@ -9,12 +9,14 @@
 }
 
 .categoriesCard__text{
+    text-decoration: none;
     color: var(--white);
     line-height: 2.5rem;
     font-family: var(--fontFamily);
     font-size: 0.8rem;
     font-weight: bold;
     margin: 0;
+    text-transform: capitalize;
 }
 
 .categoriesCard__readMore{

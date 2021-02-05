@@ -1,14 +1,14 @@
-import TokenContext from "../TokenContext";
 import FeaturedCard from "../components/FeaturedCard"; /* component */
 import MainNav from "../components/MainNav"; /* component */
 import Heading from "../components/Heading"; /* component */
 import BreadcrumbNavigation from "../components/BreadcrumbNavigation"; /* component */
 import "../Variables.css"; /* css */
 import "../components/style/Main.css"; /* css */
+import TokenContext from "../TokenContext";
 import { useContext, useEffect, useState } from "react";
 import axios from "axios";
 
-export default function Featured(){
+export default function Featured(props){
     var [token] = useContext(TokenContext);
     var [content, setContent] = useState({});
 
@@ -20,8 +20,8 @@ export default function Featured(){
         })
         .then(function (response){
             setContent(response.data);
-            console.log(content.playlists?.items)
-        })}, [token, setContent]);
+            //console.log(content.playlists?.items);
+    })}, [token, setContent]);
 
     return(
         <main className="main featured">
@@ -30,7 +30,12 @@ export default function Featured(){
            
            {content.playlists?.items.map(function(item){
                return(
-                   <FeaturedCard image={item.images[0].url} artist={item.name} category={item.type} />
+                   <FeaturedCard
+                   id={item.id}
+                   key={item.id}
+                   image={item.images[0].url}
+                   artist={item.name}
+                   category={item.type} />
                )
            })}
 

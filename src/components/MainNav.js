@@ -10,7 +10,7 @@ export default function MainNav(props){
             <Link to="/playlists">
                 <img src="../Microphone.svg" alt="Icon of a microphone"  style={{filter:props.filterMic}}/>
             </Link>
-            <Link to="/" className="mainNav__wifi">
+            <Link to="/featured" className="mainNav__wifi">
                 <img src="../Wifi.svg" alt="Main icon"  style={{filter:props.filterWifi}}/>
             </Link>
             <Link to="/colortheme">

@@ -35,6 +35,8 @@
     line-height: 1.7rem;
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 55vw;
 }
 
 .songsWithPlayButton__artist{

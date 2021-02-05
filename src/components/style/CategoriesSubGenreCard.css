@@ -5,6 +5,12 @@
     color: var(--white);
     font-family: var(--fontFamily);
     font-size: 0.8rem;
+    text-decoration: none;
+    text-transform: capitalize;    
+}
+
+.categoriesSubGenreCard:last-of-type{
+    padding: 0.5rem var(--borderPadding) 2rem var(--borderPadding);
 }
 
 .categoriesSubGenreCard__text{

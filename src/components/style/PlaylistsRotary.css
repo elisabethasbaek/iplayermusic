@@ -14,6 +14,11 @@
 .playlistsRotary .playlistsRotary__segment:nth-of-type(3) img{
     max-width: 28vw;
     max-height: 28vw;
-    margin-top: 10rem;
+    margin-top: 1.5rem;
     filter: contrast(70%);
+}
+
+.playlistsRotary .playlistsRotary__segment:nth-of-type(1) h2,
+.playlistsRotary .playlistsRotary__segment:nth-of-type(3) h2{
+    display: none;
 }
