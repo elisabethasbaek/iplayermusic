@@ -11,8 +11,6 @@ import axios from "axios";
 export default function Featured(props){
     var [token] = useContext(TokenContext);
     var [content, setContent] = useState({});
-    var [tracks, setTracks] = useState([]);
-    var [currentPlaylist, setCurrentPlaylist] = useState("uh-oh!");
 
     useEffect(function(){
         axios.get("https://api.spotify.com/v1/browse/featured-playlists", {
@@ -22,20 +20,8 @@ export default function Featured(props){
         })
         .then(function (response){
             setContent(response.data);
-            console.log(content.playlists?.items);
+            //console.log(content.playlists?.items);
     })}, [token, setContent]);
-
-    useEffect(function(){
-        if(currentPlaylist)
-        axios.get("https://api.spotify.com/v1/playlists/" + currentPlaylist + "/tracks", {
-            headers: {
-                "Authorization": "Bearer " + token.access_token
-            }
-        })
-        .then(function (response){
-            setTracks(response.data);
-    })}, [token, currentPlaylist, setTracks]);
-    /* hmmm featured skal jo gerne opdatere playlists */
 
     return(
         <main className="main featured">
@@ -49,8 +35,7 @@ export default function Featured(props){
                    key={item.id}
                    image={item.images[0].url}
                    artist={item.name}
-                   category={item.type}
-                   onClick={() => setCurrentPlaylist(item.id)} />
+                   category={item.type} />
                )
            })}
 
