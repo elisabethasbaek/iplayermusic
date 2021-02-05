@@ -18,7 +18,7 @@ export default function Playlists(props){
     var [token] = useContext(TokenContext);
     var [tracks, setTracks] = useState([]);
     var [playlists, setPlaylists] = useState([]);
-    var [featured, setFeatured] = useState([]);
+    var [featured, setFeatured] = useState({});
 
     useEffect(function(){
         axios.get("https://api.spotify.com/v1/me/playlists", {
@@ -39,7 +39,7 @@ export default function Playlists(props){
         })
         .then(function (response){
             setFeatured(response.data);
-            console.log(featured.name)
+            console.log(response.data)
     })}, [token, props.id, setFeatured]);
 
     useEffect(function(){
@@ -59,22 +59,20 @@ export default function Playlists(props){
             <BreadcrumbNavigation color="rgba(0,0,0,0.0)">Playlists</BreadcrumbNavigation>
             <Heading>Playlists</Heading> 
 
-            {props.id
-            ?
             <section className="playlistsRotary">
-                { Array(3).fill(
+                {props.id
+                ?
+                Array(3).fill(
                     <PlaylistsRotarySegment
                     href={"/playlists/" + featured?.id}
                     onClick={() => navigate(`/playlists/${featured?.id}`)}
-                    image={featured?.images[0].url}
+                    image={featured.images?.length && featured?.images[0].url}
                     key={featured?.snapshot_id}
                     artist={featured?.name}
                     album={featured?.name}/>
-                )}
-            </section>
-            :
-            <section className="playlistsRotary">
-                {playlists.map(list => (
+                )
+                :
+                playlists.map(list => (
                     <PlaylistsRotarySegment
                     href={"/playlists/" + list?.id}
                     onClick={() => navigate(`/playlists/${list?.id}`)}
@@ -82,9 +80,9 @@ export default function Playlists(props){
                     key={list?.snapshot_id}
                     artist={list?.name}
                     album={list?.name}/>
-                ))}
+                ))
+                }
             </section>
-            }
 
             <section className="playlists__songs">
                 {tracks.items?.map(({track}) => (
@@ -101,7 +99,8 @@ export default function Playlists(props){
             album="/playlists/player/"
             text="Listen all" />
 
-            <MainNav filterMic="brightness(10000%)" />
+            <MainNav
+            filterMic="brightness(10000%)" />
         </main>
     )
 }
