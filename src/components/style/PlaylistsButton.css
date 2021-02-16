@@ -1,18 +1,18 @@
-.playlistsButton{
-    margin: 1rem var(--borderPadding) 0.5rem var(--borderPadding);
-    border-radius: 50px;
-    text-align: center;
-    border: 2px solid var(--primaryColor);
-    color: var(--primaryColor);
-    font-family: var(--fontFamily);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    letter-spacing: 0.1rem;
-    padding: 0.8rem 0;
-    max-height: 1.3rem;
+.playlistsButton {
+  margin: 1rem var(--borderPadding) 0.5rem var(--borderPadding);
+  border-radius: 50px;
+  text-align: center;
+  border: 2px solid var(--primaryColor);
+  color: var(--primaryColor);
+  font-family: var(--fontFamily);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  padding: 0.8rem 0;
+  max-height: 1.3rem;
 }
 
-.playlistsButton:visited{
-    color: var(--primaryColor);
+.playlistsButton:visited {
+  color: var(--primaryColor);
 }

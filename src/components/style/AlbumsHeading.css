@@ -1,31 +1,31 @@
-.albumsHeading{
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem var(--borderPadding);
-    font-family: var(--fontFamily);
+.albumsHeading {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem var(--borderPadding);
+  font-family: var(--fontFamily);
 }
 
-.albumsHeading__heading{
-    color: var(--white);
-    font-weight: bold;
-    margin: 0;
-    font-size: 0.9rem;
-    text-decoration: none;
+.albumsHeading__heading {
+  color: var(--white);
+  font-weight: bold;
+  margin: 0;
+  font-size: 0.9rem;
+  text-decoration: none;
 }
 
-.albumsHeading__heading:visited{
-    color: var(--white);
+.albumsHeading__heading:visited {
+  color: var(--white);
 }
 
-.albumsHeading__viewAll{
-    color: var(--primaryColor);
-    font-size: 0.8rem;
-    line-height: 1.3rem;
-    margin: 0;
-    font-weight: 200;
-    text-decoration: none;
+.albumsHeading__viewAll {
+  color: var(--primaryColor);
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+  margin: 0;
+  font-weight: 200;
+  text-decoration: none;
 }
 
-.albumsHeading__viewAll:visited{
-    color: var(--primaryColor);
+.albumsHeading__viewAll:visited {
+  color: var(--primaryColor);
 }

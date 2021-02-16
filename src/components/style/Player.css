@@ -1,6 +1,6 @@
-.player{
-    padding: 0 var(--borderPadding);
-    max-height: 100vh;
+.player {
+  padding: 0 var(--borderPadding);
+  max-height: 100vh;
 }
 
 /* .player .backgroundImage{

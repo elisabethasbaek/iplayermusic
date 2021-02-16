@@ -1,22 +1,22 @@
-.main.welcome{
-    display: grid;
-    justify-content: center;
+.main.welcome {
+  display: grid;
+  justify-content: center;
 }
 
-.welcome__logo{
-    text-align: center;
-    align-self: end;
-    max-width: 100%;
-    height: auto;
+.welcome__logo {
+  text-align: center;
+  align-self: end;
+  max-width: 100%;
+  height: auto;
 }
 
-.welcome__heading{
-    color: var(--white);
-    text-align: center;
-    align-self: start;
-    font-family: var(--fontFamily);
-    font-size: 2rem;
-    font-weight: 700;
-    margin: 0 0 10vh 0;
-    padding: 1.5rem 0;
+.welcome__heading {
+  color: var(--white);
+  text-align: center;
+  align-self: start;
+  font-family: var(--fontFamily);
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 10vh 0;
+  padding: 1.5rem 0;
 }

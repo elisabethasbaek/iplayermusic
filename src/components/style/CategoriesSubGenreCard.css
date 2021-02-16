@@ -1,23 +1,23 @@
-.categoriesSubGenreCard{
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5rem var(--borderPadding);
-    color: var(--white);
-    font-family: var(--fontFamily);
-    font-size: 0.8rem;
-    text-decoration: none;
-    text-transform: capitalize;    
+.categoriesSubGenreCard {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem var(--borderPadding);
+  color: var(--white);
+  font-family: var(--fontFamily);
+  font-size: 0.8rem;
+  text-decoration: none;
+  text-transform: capitalize;
 }
 
-.categoriesSubGenreCard:last-of-type{
-    padding: 0.5rem var(--borderPadding) 2rem var(--borderPadding);
+.categoriesSubGenreCard:last-of-type {
+  padding: 0.5rem var(--borderPadding) 2rem var(--borderPadding);
 }
 
-.categoriesSubGenreCard__text{
-    margin: 0;
+.categoriesSubGenreCard__text {
+  margin: 0;
 }
 
-.categoriesSubGenreCard__chevron{
-    height: auto;
-    width: 0.4rem;
+.categoriesSubGenreCard__chevron {
+  height: auto;
+  width: 0.4rem;
 }

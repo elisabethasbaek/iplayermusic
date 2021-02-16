@@ -8,15 +8,23 @@ import "../components/style/Main.css"; /* css */
 import "../components/style/Player.css"; /* css */
 import "../Variables.css"; /* css */
 
-export default function Player(){
-    return(
-        <main className="main player" style={{backgroundImage: `url("https://picsum.photos/800/1000")`}}>
-            <BreadcrumbNavigation color="rgba(0,0,0,0.0)" display="none">Playing</BreadcrumbNavigation>
-            <PlayerImage artist="https://picsum.photos/900/900" />
-            <PlayerText title="Title of dope ass song" artist="The fucking artist bruh" />
-            <PlayerSlider start="0:00" end="3:40" />
-            <PlayerNavigation />
-            <MainNav display="none"/>
-        </main>
-    )
-};
+export default function Player() {
+  return (
+    <main
+      className="main player"
+      style={{ backgroundImage: `url("https://picsum.photos/800/1000")` }}
+    >
+      <BreadcrumbNavigation color="rgba(0,0,0,0.0)" display="none">
+        Playing
+      </BreadcrumbNavigation>
+      <PlayerImage artist="https://picsum.photos/900/900" />
+      <PlayerText
+        title="Title of dope ass song"
+        artist="The fucking artist bruh"
+      />
+      <PlayerSlider start="0:00" end="3:40" />
+      <PlayerNavigation />
+      <MainNav display="none" />
+    </main>
+  );
+}

@@ -1,27 +1,27 @@
-.categories .categoriesCard:nth-of-type(9n+1){
-background-color: var(--primaryColor);
+.categories .categoriesCard:nth-of-type(9n + 1) {
+  background-color: var(--primaryColor);
 }
-.categories .categoriesCard:nth-of-type(9n+2){
-    background-color: var(--coral);
+.categories .categoriesCard:nth-of-type(9n + 2) {
+  background-color: var(--coral);
 }
-.categories .categoriesCard:nth-of-type(9n+3){
-    background-color: var(--orange);
+.categories .categoriesCard:nth-of-type(9n + 3) {
+  background-color: var(--orange);
 }
-.categories .categoriesCard:nth-of-type(9n+4){
-    background-color: var(--yellow);
+.categories .categoriesCard:nth-of-type(9n + 4) {
+  background-color: var(--yellow);
 }
-.categories .categoriesCard:nth-of-type(9n+5){
-    background-color: var(--lightGreen);
+.categories .categoriesCard:nth-of-type(9n + 5) {
+  background-color: var(--lightGreen);
 }
-.categories .categoriesCard:nth-of-type(9n+6){
-    background-color: var(--darkGreen);
+.categories .categoriesCard:nth-of-type(9n + 6) {
+  background-color: var(--darkGreen);
 }
-.categories .categoriesCard:nth-of-type(9n+7){
-    background-color: var(--lightBlue);
+.categories .categoriesCard:nth-of-type(9n + 7) {
+  background-color: var(--lightBlue);
 }
-.categories .categoriesCard:nth-of-type(9n+8){
-    background-color: var(--blue);
+.categories .categoriesCard:nth-of-type(9n + 8) {
+  background-color: var(--blue);
 }
-.categories .categoriesCard:nth-of-type(9n+9){
-    background-color: var(--darkBlue);
+.categories .categoriesCard:nth-of-type(9n + 9) {
+  background-color: var(--darkBlue);
 }

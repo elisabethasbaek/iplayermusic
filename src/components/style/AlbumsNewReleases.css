@@ -1,46 +1,46 @@
-.albumsNewReleases{
-    display: grid;
-    grid-template-columns: 0.6fr 4fr 1fr;
-    margin-bottom: 1rem;
+.albumsNewReleases {
+  display: grid;
+  grid-template-columns: 0.6fr 4fr 1fr;
+  margin-bottom: 1rem;
 }
 
-.albumsNewReleases img{
-    width: 3rem;
-    height: 3rem;
-    margin: 0.2rem 0;
-    border-radius: 2px;
-    object-fit: cover;
+.albumsNewReleases img {
+  width: 3rem;
+  height: 3rem;
+  margin: 0.2rem 0;
+  border-radius: 2px;
+  object-fit: cover;
 }
 
-.albumsNewReleases__textContainer{
-    color: var(--white);
-    font-family: var(--fontFamily);
-    margin-top: 0.2rem;
-    margin-left: 0.8rem;
+.albumsNewReleases__textContainer {
+  color: var(--white);
+  font-family: var(--fontFamily);
+  margin-top: 0.2rem;
+  margin-left: 0.8rem;
 }
 
-.albumsNewReleases__song{
-    font-weight: bold;
-    font-size: 0.9rem;
-    margin: 0;
-    line-height: 1.7rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.albumsNewReleases__song {
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.7rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.albumsNewReleases__artist{
-    font-weight: 300;
-    font-size: 0.7rem;
-    margin: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.albumsNewReleases__artist {
+  font-weight: 300;
+  font-size: 0.7rem;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.albumsNewReleases__duration{
-    font-family: var(--fontFamily);
-    color: var(--white);
-    font-size: 0.7rem;
-    text-align: end;
-    margin: 0;
-    align-self: center;
+.albumsNewReleases__duration {
+  font-family: var(--fontFamily);
+  color: var(--white);
+  font-size: 0.7rem;
+  text-align: end;
+  margin: 0;
+  align-self: center;
 }

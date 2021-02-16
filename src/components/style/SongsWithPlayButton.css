@@ -1,57 +1,57 @@
-.songsWithPlayButton{
-    display: grid;
-    grid-template-columns: 0.6fr 4fr 1fr;
-    margin: 0.5rem 0;
+.songsWithPlayButton {
+  display: grid;
+  grid-template-columns: 0.6fr 4fr 1fr;
+  margin: 0.5rem 0;
 }
 
-.songsWithPlayButton__playButton{
-    border-radius: 50%;
-    background: var(--gradientHorizontal);
-    outline: none;
-    border: none;
-    height: 1.8rem;
-    width: 1.8rem;
-    display: grid;
-    margin: 0.2rem 0;
-    align-self: center;
+.songsWithPlayButton__playButton {
+  border-radius: 50%;
+  background: var(--gradientHorizontal);
+  outline: none;
+  border: none;
+  height: 1.8rem;
+  width: 1.8rem;
+  display: grid;
+  margin: 0.2rem 0;
+  align-self: center;
 }
 
-.songsWithPlayButton__playButton img{
-    place-self: center;
-    padding-left: 1.5px;
+.songsWithPlayButton__playButton img {
+  place-self: center;
+  padding-left: 1.5px;
 }
 
-.songsWithPlayButton__textContainer{
-    color: var(--white);
-    font-family: var(--fontFamily);
-    margin-top: 0.2rem;
-    margin-left: 0.8rem;
+.songsWithPlayButton__textContainer {
+  color: var(--white);
+  font-family: var(--fontFamily);
+  margin-top: 0.2rem;
+  margin-left: 0.8rem;
 }
 
-.songsWithPlayButton__song{
-    font-weight: bold;
-    font-size: 0.9rem;
-    margin: 0;
-    line-height: 1.7rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 55vw;
+.songsWithPlayButton__song {
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.7rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 55vw;
 }
 
-.songsWithPlayButton__artist{
-    font-weight: 300;
-    font-size: 0.7rem;
-    margin: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.songsWithPlayButton__artist {
+  font-weight: 300;
+  font-size: 0.7rem;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.songsWithPlayButton__duration{
-    font-family: var(--fontFamily);
-    color: var(--white);
-    font-size: 0.7rem;
-    text-align: end;
-    margin: 0;
-    align-self: center;
+.songsWithPlayButton__duration {
+  font-family: var(--fontFamily);
+  color: var(--white);
+  font-size: 0.7rem;
+  text-align: end;
+  margin: 0;
+  align-self: center;
 }

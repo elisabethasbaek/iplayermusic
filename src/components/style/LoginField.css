@@ -1,42 +1,42 @@
-.loginField{
-    display: grid;
-    grid-template: auto auto / 8fr auto;
+.loginField {
+  display: grid;
+  grid-template: auto auto / 8fr auto;
 }
 
-.loginField label{
-    grid-area: 1/1/2/3;
-    color: var(--white);
-    font-weight: bold;
-    font-family: var(--fontFamily);
-    font-size: 0.9rem;
-    padding-bottom: 0.5rem;
+.loginField label {
+  grid-area: 1/1/2/3;
+  color: var(--white);
+  font-weight: bold;
+  font-family: var(--fontFamily);
+  font-size: 0.9rem;
+  padding-bottom: 0.5rem;
 }
 
-.loginField input{
-    grid-area: 2/1/3/2;
-    background: var(--primaryColor);
-    border: none;
-    outline: none;
-    line-height: 2.5rem;
-    color: var(--white);
-    font-weight: bold;
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
+.loginField input {
+  grid-area: 2/1/3/2;
+  background: var(--primaryColor);
+  border: none;
+  outline: none;
+  line-height: 2.5rem;
+  color: var(--white);
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
 }
 
-.loginField input::placeholder{
-    color: var(--white);
-    font-weight: 300;
+.loginField input::placeholder {
+  color: var(--white);
+  font-weight: 300;
 }
 
-.loginField__icon{
-    grid-area: 2/2/3/3;
-    justify-self: end;
-    margin: 0;
-    padding: 0.66rem 0;
+.loginField__icon {
+  grid-area: 2/2/3/3;
+  justify-self: end;
+  margin: 0;
+  padding: 0.66rem 0;
 }
 
 .loginField input,
-.loginField__icon{
-    border-bottom: 2px solid var(--white);
+.loginField__icon {
+  border-bottom: 2px solid var(--white);
 }

@@ -1,49 +1,49 @@
-.main.login{
-    background-color: var(--primaryColor);
-    display: flex;
-    flex-direction: column;
+.main.login {
+  background-color: var(--primaryColor);
+  display: flex;
+  flex-direction: column;
 }
 
-.main.login .heading{
-    filter: brightness(10000%);
-    padding: 0;
-    margin-bottom: 15vh;
+.main.login .heading {
+  filter: brightness(10000%);
+  padding: 0;
+  margin-bottom: 15vh;
 }
 
-.main.login form{
-    align-self: end;
-    width: 100%;
+.main.login form {
+  align-self: end;
+  width: 100%;
 }
 
-.main.login .playlistsButton{
-    border: 2px solid var(--white);
-    color: var(--white);
-    margin: 1rem 0 0 0;
+.main.login .playlistsButton {
+  border: 2px solid var(--white);
+  color: var(--white);
+  margin: 1rem 0 0 0;
 }
 
-.login__spotify{
-    display: grid;
-    grid-template-rows: auto auto;
-    justify-items: center;
-    margin-top: 3rem;
-    text-decoration: none;
+.login__spotify {
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  margin-top: 3rem;
+  text-decoration: none;
 }
 
-.login__spotify img{
-    background: rgba(255, 255, 255, 0.3);
-    width: 2rem;
-    height: 2rem;
-    padding: 1rem;
-    border-radius: 50px;
-    filter: brightness(100000%);
+.login__spotify img {
+  background: rgba(255, 255, 255, 0.3);
+  width: 2rem;
+  height: 2rem;
+  padding: 1rem;
+  border-radius: 50px;
+  filter: brightness(100000%);
 }
 
-.login__spotifyLink{
-    text-align: center;
-    color: var(--white);
-    font-family: var(--fontFamily);
-    font-size: 0.9rem;
-    margin: 0;
-    padding-top: 0.5rem;
-    text-decoration: none;
+.login__spotifyLink {
+  text-align: center;
+  color: var(--white);
+  font-family: var(--fontFamily);
+  font-size: 0.9rem;
+  margin: 0;
+  padding-top: 0.5rem;
+  text-decoration: none;
 }

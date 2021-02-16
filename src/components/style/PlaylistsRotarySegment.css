@@ -1,25 +1,25 @@
-.playlistsRotary__segment{
-    justify-self: center;
-    text-decoration: none;
+.playlistsRotary__segment {
+  justify-self: center;
+  text-decoration: none;
 }
 
-.playlistsRotary__image{
-    overflow: hidden;
-    width: 40vw;
-    height: 40vw;
-    margin-top: 0rem;
-    border-radius: 3px;
-    box-shadow: 2px 2px 20px rgba(0,0,0,0.4);
+.playlistsRotary__image {
+  overflow: hidden;
+  width: 40vw;
+  height: 40vw;
+  margin-top: 0rem;
+  border-radius: 3px;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
 }
 
-.playlistsRotary__albumHeading{
-    justify-self: center;
-    color: var(--white);
-    max-width: 40vw;
-    font-family: var(--fontFamily);
-    text-align: center;
-    max-lines: 2;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 1.2rem;
+.playlistsRotary__albumHeading {
+  justify-self: center;
+  color: var(--white);
+  max-width: 40vw;
+  font-family: var(--fontFamily);
+  text-align: center;
+  max-lines: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.2rem;
 }

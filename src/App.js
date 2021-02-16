@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Router} from "@reach/router"
+import { Router } from "@reach/router";
 import TokenContext from "./TokenContext";
 import Featured from "./pages/Featured";
 import Categories from "./pages/Categories";
@@ -17,12 +17,11 @@ function App() {
   return (
     <TokenContext.Provider value={tokenState}>
       <Router>
-        {
-          (function(){
-            if (tokenState[0]?.access_token)
-            return(
+        {(function () {
+          if (tokenState[0]?.access_token)
+            return (
               <>
-                <Welcome path="/welcome"/>
+                <Welcome path="/welcome" />
                 <Albums path="/albums" />
                 <AlbumDetails path="/albums/albumdetails" />
                 <Playlists path="/playlists" />
@@ -33,9 +32,8 @@ function App() {
                 <Featured path="/featured" />
                 <Categories path="/categories" />
               </>
-            )
-          }())
-        }
+            );
+        })()}
         <LogIn default />
         <Callback path="/callback" />
       </Router>

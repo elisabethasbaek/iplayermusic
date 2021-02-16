@@ -1,8 +1,8 @@
-.albumDetailsNumberSongs{
-    font-family: var(--fontFamily);
-    color: var(--white);
-    font-weight: 600;
-    padding: 0 var(--borderPadding);
-    font-size: 0.9rem;
-    margin: 0;
+.albumDetailsNumberSongs {
+  font-family: var(--fontFamily);
+  color: var(--white);
+  font-weight: 600;
+  padding: 0 var(--borderPadding);
+  font-size: 0.9rem;
+  margin: 0;
 }
