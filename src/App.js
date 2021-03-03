@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Router } from "@reach/router";
+import * as Sentry from "@sentry/react";
 import TokenContext from "./TokenContext";
 import Featured from "./pages/Featured";
 import Categories from "./pages/Categories";
@@ -10,6 +11,10 @@ import AlbumDetails from "./pages/AlbumDetails";
 import Welcome from "./pages/Welcome";
 import LogIn from "./pages/LogIn";
 import Callback from "./pages/Callback";
+
+Sentry.init({
+  dsn: "https://88109078aa9d457d9ffbebed30e70136@o541232.ingest.sentry.io/5659833"
+});
 
 function App() {
   var tokenState = useState(null);

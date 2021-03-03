@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 import "../components/style/FeaturedCardError.css";
 
 class FeaturedCardError extends React.Component {
@@ -9,16 +10,26 @@ class FeaturedCardError extends React.Component {
         };
     }
 
-    static getDerivedStateFromError(error){
+    /* static getDerivedStateFromError(error){
         return{hasError: true};
-    }
+    } */
 
-    componentDidCatch(error, errorInfo){
-        console.error(error, errorInfo);
+    componentDidCatch(error, info){
+        this.setState({
+            error,
+            info
+        });
+
+        axios.post("/.netlify/functions/error-logging", {
+            body: {
+                error,
+                info
+            }
+        });
     }
 
     render(){
-        if(this.state.hasError){
+        if(this.state.error){
             return(
                 <>
                     <h1 className="errorHeading">The content can't be displayed right now.</h1>

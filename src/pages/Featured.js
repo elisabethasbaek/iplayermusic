@@ -7,7 +7,7 @@ import "../components/style/Main.css"; /* css */
 import TokenContext from "../TokenContext";
 import { useContext, useEffect, useState } from "react";
 import axios from "axios";
-import FeaturedCardError from "../components/FeaturedCardError"; /* error boundary */
+import Sentry from "@sentry/react";
 
 export default function Featured(props) {
   var [token] = useContext(TokenContext);
@@ -38,7 +38,7 @@ export default function Featured(props) {
 
         {content.playlists?.items.map(function (item) {
           return (
-            <FeaturedCardError>
+            <Sentry.ErrorBoundary>
               <FeaturedCard
                 id={item.id}
                 key={item.id}
@@ -46,7 +46,7 @@ export default function Featured(props) {
                 artist={item.name}
                 category={item.type}
               />
-            </FeaturedCardError>
+            </Sentry.ErrorBoundary>
           );
         })}
 
