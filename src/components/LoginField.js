@@ -1,4 +1,4 @@
-import "../components/style/LogInField.css";
+import "./style/LogInField.css";
 
 export default function LogInField(props) {
   return (
