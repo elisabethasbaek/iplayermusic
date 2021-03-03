@@ -122,27 +122,3 @@ export default function Playlists(props) {
     </main>
   );
 }
-
-{
-  /* <section className="playlistsRotary">
-        <PlaylistsRotarySegment
-        href={"/playlists/" + featured?.id}
-        onClick={() => navigate(`/playlists/${featured?.id}`)}
-        image={featured?.images[0].url}
-        key={featured?.snapshot_id}
-        artist={featured?.name}
-        album={featured?.name}/>
-    </section>
-
-    <section className="playlistsRotary">
-        {playlists.map(list => (
-            <PlaylistsRotarySegment
-            href={"/playlists/" + list?.id}
-            onClick={() => navigate(`/playlists/${list?.id}`)}
-            image={list?.images[0].url}
-            key={list?.snapshot_id}
-            artist={list?.name}
-            album={list?.name}/>
-        ))}
-    </section> */
-}

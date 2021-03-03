@@ -13,6 +13,7 @@ import "../Variables.css"; /* css */
 
 export default function Albums() {
   var [token] = useContext(TokenContext);
+  // eslint-disable-next-line
   var [content, setContent] = useState({});
 
   useEffect(
