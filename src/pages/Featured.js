@@ -7,6 +7,7 @@ import "../components/style/Main.css"; /* css */
 import TokenContext from "../TokenContext";
 import { useContext, useEffect, useState } from "react";
 import axios from "axios";
+import FeaturedCardError from "../components/FeaturedCardError"; /* error boundary */
 
 export default function Featured(props) {
   var [token] = useContext(TokenContext);
@@ -35,17 +36,19 @@ export default function Featured(props) {
       </BreadcrumbNavigation>
       <Heading>Featured</Heading>
 
-      {content.playlists?.items.map(function (item) {
-        return (
-          <FeaturedCard
-            id={item.id}
-            key={item.id}
-            image={item.images[0].url}
-            artist={item.name}
-            category={item.type}
-          />
-        );
-      })}
+        {content.playlists?.items.map(function (item) {
+          return (
+            <FeaturedCardError>
+              <FeaturedCard
+                id={item.id}
+                key={item.id}
+                image={item.images[0].url}
+                artist={item.name}
+                category={item.type}
+              />
+            </FeaturedCardError>
+          );
+        })}
 
       <MainNav filterWifi="brightness(10000%)" />
     </main>
