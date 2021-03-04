@@ -2,7 +2,7 @@ import queryString from "querystring";
 import "../Variables.css"; /* css */
 import "../components/style/LogIn.css"; /* css */
 import Heading from "../components/Heading"; /* component */
-import PlaylistsButton from "../components/PlaylistsButton";
+// import PlaylistsButton from "../components/PlaylistsButton";
 // import LogInField from "../components/LogInField.js";
 
 export default function LogIn() {
@@ -20,8 +20,8 @@ export default function LogIn() {
   return (
     <main className="main login">
       <Heading>Log In</Heading>
-      <form>
-        {/* <LogInField
+      {/* <form>
+        <LogInField
           forr="username"
           type="text"
           placeholder="Enter your username"
@@ -36,9 +36,9 @@ export default function LogIn() {
           icon="../Key.svg"
         >
           Password
-        </LogInField> */}
+        </LogInField>
       </form>
-      <PlaylistsButton text="Log In" album="/" />
+      <PlaylistsButton text="Log In" album="/" /> */}
       <a
         className="login__spotify"
         href={`https://accounts.spotify.com/authorize?${queryParameters}`}
