@@ -10,7 +10,9 @@ export default function LogIn() {
     response_type: "code",
     client_id: "de5abe58dab743b786d000caeabc78e1",
     scope: "user-read-private user-read-email",
-    redirect_uri: "http://localhost:8888/callback",
+    redirect_uri: process.env.NODE_ENV === "prodction"
+      ? "https://iplaymusic-elisabeth.netlify.app/callback"
+      : "http://localhost:8888/callback",
     state:
       "jfedvpusebvfpesbfvpief893y4937y647yriugfb3i78tr873ugr3urbvfbpu3rgr82y210",
   });
