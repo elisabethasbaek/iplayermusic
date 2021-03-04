@@ -1,6 +1,6 @@
 import "./style/LogInField.css";
 
-export default function LogInField(props) {
+function LogInField(props) {
   return (
     <div className="loginField">
       <label htmlFor={props.forr}>{props.children}</label>
@@ -13,3 +13,5 @@ export default function LogInField(props) {
     </div>
   );
 }
+
+export default LogInField;
