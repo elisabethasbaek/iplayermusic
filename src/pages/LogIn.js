@@ -3,7 +3,7 @@ import "../Variables.css"; /* css */
 import "../components/style/LogIn.css"; /* css */
 import Heading from "../components/Heading"; /* component */
 import PlaylistsButton from "../components/PlaylistsButton";
-import LogInField from "../components/LogInField";
+import LogInField from "../components/LogInField.js";
 
 export default function LogIn() {
   var queryParameters = queryString.stringify({
